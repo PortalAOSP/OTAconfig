@@ -1,1 +1,78 @@
-succ
+====================
+     2018-11-01    
+====================
+
+ * kernel/xiaomi/msm8953
+8495e71  net/wireguard: add wireguard importer  [edi184]
+
+ * manifest
+74aa405  Add Wireguard  [edi194]
+
+ * packages/apps/PornApps
+2e1b5b8  Add Wireguard app  [edi194]
+
+====================
+     2018-10-31    
+====================
+
+====================
+     2018-10-30    
+====================
+
+ * device/qcom/sepolicy
+4a25e17  sepolicy: Allow perf HAL to set freq props  [Bruno Martins]
+
+ * device/qcom/sepolicy-legacy
+fff950d  legacy: Correctly label display.qservice  [Ethan Chen]
+
+====================
+     2018-10-29    
+====================
+
+ * device/qcom/sepolicy-legacy
+668f663  sepolicy: Allow android service to write on tombstones  [Ajit Vaishya]
+64fdeae  Change to compile due to hostapd.te removal  [Sridhar Parasuram]
+0feb07d  Revert "sepol: hostapd is now hal_wifi_hostapd"  [Michael Bestas]
+
+ * hardware/qcom/audio-caf/msm8974
+787f7d3  Use header lib instead of using global include path  [Arne Coucheron]
+
+ * hardware/qcom/display-caf/msm8974
+ac3c564  Use header lib instead of using global include path  [Jiyong Park]
+
+ * system/bt
+ac0efd0  Fix for Bluetooth device name is resetting to default name after reboot  [Aiswarya Cyriac]
+a7fb51f  Add support to force disable enhanced sco commands  [cb]
+799aa70  Prevent abort in case of command timeout  [Luke Zhang]
+62b49d1  Bluetooth: Read BLE vendor capability to proceed on Secure conn  [Srinu Jella]
+
+====================
+     2018-10-28    
+====================
+
+====================
+     2018-10-27    
+====================
+
+====================
+     2018-10-26    
+====================
+
+ * build/make
+b297891  Update ota_from_target_files.py  [edi194]
+
+ * packages/apps/PornOTA
+b17a863  It's time to use our own icons.  [JavAster]
+59c8999  Everything is fine.  [JavAster]
+
+ * packages/apps/SetupWizard
+4f5a77f  logo: działaj kurwo  [edi194]
+
+ * vendor/paosp
+5bdc948  readme: add op3 tree link  [edi194]
+558d022  ota: Naming improvements  [Mateusz Korzeniewski]
+a53ece8  Clean-ups  [Mateusz Korzeniewski]
+3c27bae  Merge pull request #3 from p8tgames/patch-1  [Mateusz Korzeniewski]
+5d82114  add god  [P8tGames]
+da6b04d  README: add @4PERTURE to maintainer list  [Mateusz Korzeniewski]
+
