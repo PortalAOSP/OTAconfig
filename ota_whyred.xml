@@ -6,11 +6,11 @@
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://drive.google.com/uc?export=download&id=1IQ1gVvOKXoYn5FvhAQa7lDT1kAs0Rt95</RomUrl>
+                description="">https://netcologne.dl.sourceforge.net/project/paosp/whyred/PAOSP-creamPie-181101-Teen-whyred.zip</RomUrl>
             <MD5Url
                 id="md5"
                 title=""
-                description="">https://drive.google.com/uc?export=download&id=1C1RCAoHGsJrm_7ntXx_W7zqs77gxOHvK</MD5Url>
+                description="">https://netcologne.dl.sourceforge.net/project/paosp/whyred/PAOSP-creamPie-181101-Teen-whyred.zip.md5sum</MD5Url>
             <OpenGappsUrl
                 id="gapps"
                 title=""
