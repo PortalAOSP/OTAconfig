@@ -2,15 +2,15 @@
 <XenonOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Pie>
         <whyred>
-            <Filename>PAOSP-Pie-181025-Amateur-whyred</Filename>
+            <Filename>PAOSP-creamPie-181101-Teen</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">nic</RomUrl>
+                description="">https://drive.google.com/uc?export=download&id=1IQ1gVvOKXoYn5FvhAQa7lDT1kAs0Rt95</RomUrl>
             <MD5Url
                 id="md5"
                 title=""
-                description="">nic</MD5Url>
+                description="">https://drive.google.com/uc?export=download&id=1C1RCAoHGsJrm_7ntXx_W7zqs77gxOHvK</MD5Url>
             <OpenGappsUrl
                 id="gapps"
                 title=""
@@ -22,7 +22,7 @@
             <DonateUrl
                 id="donate"
                 title=""
-                description="">nic</DonateUrl>
+                description="">https://www.paypal.me/edi194</DonateUrl>
         </whyred>
     </Pie>
 </XenonOTA>

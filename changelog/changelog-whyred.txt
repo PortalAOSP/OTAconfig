@@ -1,1 +1,115 @@
-succ
+====================
+     2018-11-01    
+====================
+
+ * device/xiaomi/whyred
+c0c82ff  japierdole debil  [edi194]
+25d4222  Add paypal link  [edi194]
+
+ * vendor/xiaomi
+92473d4  beryllium: Fix hotspot encryption  [TheScarastic]
+
+====================
+     2018-10-31    
+====================
+
+ * device/qcom/sepolicy
+4a25e17  sepolicy: Allow perf HAL to set freq props  [Bruno Martins]
+
+ * device/qcom/sepolicy-legacy
+fff950d  legacy: Correctly label display.qservice  [Ethan Chen]
+
+====================
+     2018-10-30    
+====================
+
+====================
+     2018-10-29    
+====================
+
+ * device/qcom/sepolicy-legacy
+668f663  sepolicy: Allow android service to write on tombstones  [Ajit Vaishya]
+64fdeae  Change to compile due to hostapd.te removal  [Sridhar Parasuram]
+0feb07d  Revert "sepol: hostapd is now hal_wifi_hostapd"  [Michael Bestas]
+
+ * hardware/qcom/audio-caf/msm8974
+787f7d3  Use header lib instead of using global include path  [Arne Coucheron]
+
+ * hardware/qcom/display-caf/msm8974
+ac3c564  Use header lib instead of using global include path  [Jiyong Park]
+
+ * system/bt
+ac0efd0  Fix for Bluetooth device name is resetting to default name after reboot  [Aiswarya Cyriac]
+a7fb51f  Add support to force disable enhanced sco commands  [cb]
+799aa70  Prevent abort in case of command timeout  [Luke Zhang]
+62b49d1  Bluetooth: Read BLE vendor capability to proceed on Secure conn  [Srinu Jella]
+
+====================
+     2018-10-28    
+====================
+
+====================
+     2018-10-27    
+====================
+
+====================
+     2018-10-26    
+====================
+
+ * build/make
+b297891  Update ota_from_target_files.py  [edi194]
+
+ * build/soong
+9145f3d  Xenon got fkt again.  [JavAster]
+
+ * frameworks/base
+1932017  Merge branch 'teen' of github.com:pornypie/frameworks_base into teen  [JavAster]
+cc35232  Okey  [JavAster]
+07b6089  Merge branch 'p' of https://github.com/TeamHorizon/frameworks_base into teen  [JavAster]
+129b5d8  New XenonHD translations  [dadi11]
+
+ * packages/apps/PornOTA
+b17a863  It's time to use our own icons.  [JavAster]
+59c8999  Everything is fine.  [JavAster]
+654a68d  Well, I'm so sorry.  [JavAster]
+6f8b541  Update translations.  [JavAster]
+
+ * packages/apps/PornSettings
+8c9a917  Merged translations.  [JavAster]
+902ef87  Merge branch 'p' of https://github.com/TeamHorizon/android_packages_apps_XenonSettings into teen  [JavAster]
+a58f294  New XenonHD translations  [dadi11]
+ecf5dad  XS: move suggestions & conditions switches to XS (2/2)  [dadi11]
+
+ * packages/apps/Settings
+0589d10  Merged new translations.  [JavAster]
+
+ * packages/apps/SetupWizard
+4f5a77f  logo: działaj kurwo  [edi194]
+5fbb668  Merged translations.  [JavAster]
+76f900a  Merge branch 'p' of https://github.com/TeamHorizon/android_packages_apps_SetupWizard into teen  [JavAster]
+0429d35  New XenonHD translations  [dadi11]
+
+ * system/core
+cc10dda  Merge branch 'p' of https://github.com/TeamHorizon/android_system_core into teen  [JavAster]
+35699cd  libion: save errno value  [Liam Mark]
+
+ * vendor/paosp
+5bdc948  readme: add op3 tree link  [edi194]
+558d022  ota: Naming improvements  [Mateusz Korzeniewski]
+a53ece8  Clean-ups  [Mateusz Korzeniewski]
+3c27bae  Merge pull request #3 from p8tgames/patch-1  [Mateusz Korzeniewski]
+5d82114  add god  [P8tGames]
+da6b04d  README: add @4PERTURE to maintainer list  [Mateusz Korzeniewski]
+256bebb  we don't need that  [edi194]
+2692aad  Update ota.mk  [edi194]
+0017f7a  It's fkin awesome  [JavAster]
+2a19b45  Merge branch 'p' of https://github.com/TeamHorizon/vendor_xenonhd into teen  [JavAster]
+4638268  Update ota.mk  [edi194]
+8942c1f  OTAAA  [edi194]
+5da6456  kernel.mk: Support kernels that use LTO  [Nathan Chancellor]
+c88ac3a  verity_tool: Implement status getter  [Christopher N. Hesse]
+
+ * vendor/xiaomi
+3ac7243  beryllium: Ship FM blobs  [Henrique Silva]
+e60e787  beryllium: Build qti-telephony-common from source  [Henrique Silva]
+
