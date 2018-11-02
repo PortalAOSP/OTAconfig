@@ -2,15 +2,15 @@
 <XenonOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Pie>
         <whyred>
-            <Filename>PAOSP-creamPie-181101-Teen</Filename>
+            <Filename>PAOSP-creamPie-181102-Teen</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://netcologne.dl.sourceforge.net/project/paosp/whyred/PAOSP-creamPie-181101-Teen-whyred.zip</RomUrl>
+                description="">https://sia.pixeldrain.com/api/file/BBeHCU1e</RomUrl>
             <MD5Url
                 id="md5"
                 title=""
-                description="">https://netcologne.dl.sourceforge.net/project/paosp/whyred/PAOSP-creamPie-181101-Teen-whyred.zip.md5sum</MD5Url>
+                description="">https://sia.pixeldrain.com/api/file/TB4JYj3b</MD5Url>
             <OpenGappsUrl
                 id="gapps"
                 title=""

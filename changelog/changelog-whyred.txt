@@ -1,10 +1,30 @@
 ====================
-     2018-11-01    
+     2018-11-02    
 ====================
+
+ * build/make
+0b19722  Remove restrictions  [edi194]
 
  * device/xiaomi/whyred
 c0c82ff  japierdole debil  [edi194]
 25d4222  Add paypal link  [edi194]
+
+ * manifest
+000e491  FM enable & Lineage SettingsIntelligence  [edi194]
+74aa405  Add Wireguard  [edi194]
+
+ * packages/apps/PornApps
+2e1b5b8  Add Wireguard app  [edi194]
+
+ * packages/apps/Settings
+45b4692e  Settings: Improve phone number preference ordering  [edi194]
+
+ * system/sepolicy
+12558e9  Build sepolicy tools with Android.bp.  [Tri Vo]
+
+====================
+     2018-11-01    
+====================
 
  * vendor/xiaomi
 92473d4  beryllium: Fix hotspot encryption  [TheScarastic]
@@ -19,12 +39,11 @@ c0c82ff  japierdole debil  [edi194]
  * device/qcom/sepolicy-legacy
 fff950d  legacy: Correctly label display.qservice  [Ethan Chen]
 
-====================
-     2018-10-30    
-====================
+ * packages/apps/SettingsIntelligence
+f6e41b0  Increase time limit of search task  [Qiulu Yang]
 
 ====================
-     2018-10-29    
+     2018-10-30    
 ====================
 
  * device/qcom/sepolicy-legacy
@@ -38,6 +57,10 @@ fff950d  legacy: Correctly label display.qservice  [Ethan Chen]
  * hardware/qcom/display-caf/msm8974
 ac3c564  Use header lib instead of using global include path  [Jiyong Park]
 
+====================
+     2018-10-29    
+====================
+
  * system/bt
 ac0efd0  Fix for Bluetooth device name is resetting to default name after reboot  [Aiswarya Cyriac]
 a7fb51f  Add support to force disable enhanced sco commands  [cb]
@@ -48,68 +71,51 @@ a7fb51f  Add support to force disable enhanced sco commands  [cb]
      2018-10-28    
 ====================
 
+ * hardware/qcom/fm
+d63631d  FM: adaptive icon  [Asher Simonds]
+56f8937  FM: Revamp notifications  [Konsta]
+0d265e0  FM: Convert FM transmitter notifications to use NotificationChannel  [Bruno Martins]
+42e939e  FM: Fix KHz->kHz  [Michael W]
+8b5d6fe  FM: Convert regional band arrays to string references  [Michael Bestas]
+1268478  FM: Update India bands  [Danesh M]
+2a18665  FM: Fix headphone icon  [Ed Falk]
+17ea8f5  FM: Fix settings UI bugs  [Ed Falk]
+28232b3  FM: Localization of band types  [Ed Falk]
+ee308b8  FM: improved band selection  [Ed Falk]
+940f9cc  FM: Select band based on country  [Ed Falk]
+1b93ad1  FM: Keep track of scanned frequencies in service  [Danesh M]
+2c300cb  FM: Ensure scan state is kept in sync  [Danesh M]
+eb38cd1  FM: The collect channel disappear when quit FM  [lijun.xie]
+746c26a  FM: Fix status text to reflect when FM is enabled.  [Martin Brabham]
+ec5cc45  FM: fix mRadioTextScroller usage in transmitter activity  [Hamster Tian]
+25f6514  FM: Launch station list automatically after scan  [Danesh M]
+6f49eae  FM: reenable radio text visibility after station info updated  [Edward Wang]
+b6e6d23  FM: Store tag num/value in sequence  [Edward Wang]
+5fa87b8  FM: retune last frequency when resume after call  [Edward Wang]
+7f65a24  FM: materialize  [linuxx]
+ab7c1ce  FM: add Indonesia  [Raj Yengisetty]
+d1fbe98  FM: Cleanup resources  [Michael Bestas]
+f0c0124  FM: Add property to force use internal antenna  [Brinly Taylor]
+4689a95  FM: Switch file extension to aac  [Danesh M]
+2ba9452  FM: Call unregister in onPause  [Danesh M]
+2534485  FM: Scanned frequencies are saved in ascending ordering  [Raj Yengisetty]
+be25cd0  FM: Re-add RDS fields to UI  [Danesh M]
+632a25b  FM: Make default country an overlay  [Danesh M]
+239fb60  FM: Restore seek arrows  [Danesh M]
+1910c69  FM: Re-vamp UI  [Danesh M]
+81cf67d  FM: Break bootclasspath dependency  [Ricardo Cerqueira]
+b80c489  Allow library to be used by apps directly  [Ricardo Cerqueira]
+0fb6155  jni: Resolve -Wwritable-strings warnings in helium FW library variables  [LuK1337]
+b22d515  jni: Resolve V4L2_CID_AUDIO_MUTE redefinitions  [Adrian DC]
+624581f  jni: Resolve equality comparisons with extraneous parentheses  [Adrian DC]
+c3b303b  libfm_jni: use proper nativehelper headers  [Steven Moreland]
+263178b  jni/libfm_jni: Ignore unused parameters from APIs  [Adrian DC]
+0c0e63f  jni/libfm_jni: Resolve FM_DEVICE_PATH R/O open flag  [Adrian DC]
+
 ====================
      2018-10-27    
 ====================
 
-====================
-     2018-10-26    
-====================
-
  * build/make
 b297891  Update ota_from_target_files.py  [edi194]
-
- * build/soong
-9145f3d  Xenon got fkt again.  [JavAster]
-
- * frameworks/base
-1932017  Merge branch 'teen' of github.com:pornypie/frameworks_base into teen  [JavAster]
-cc35232  Okey  [JavAster]
-07b6089  Merge branch 'p' of https://github.com/TeamHorizon/frameworks_base into teen  [JavAster]
-129b5d8  New XenonHD translations  [dadi11]
-
- * packages/apps/PornOTA
-b17a863  It's time to use our own icons.  [JavAster]
-59c8999  Everything is fine.  [JavAster]
-654a68d  Well, I'm so sorry.  [JavAster]
-6f8b541  Update translations.  [JavAster]
-
- * packages/apps/PornSettings
-8c9a917  Merged translations.  [JavAster]
-902ef87  Merge branch 'p' of https://github.com/TeamHorizon/android_packages_apps_XenonSettings into teen  [JavAster]
-a58f294  New XenonHD translations  [dadi11]
-ecf5dad  XS: move suggestions & conditions switches to XS (2/2)  [dadi11]
-
- * packages/apps/Settings
-0589d10  Merged new translations.  [JavAster]
-
- * packages/apps/SetupWizard
-4f5a77f  logo: działaj kurwo  [edi194]
-5fbb668  Merged translations.  [JavAster]
-76f900a  Merge branch 'p' of https://github.com/TeamHorizon/android_packages_apps_SetupWizard into teen  [JavAster]
-0429d35  New XenonHD translations  [dadi11]
-
- * system/core
-cc10dda  Merge branch 'p' of https://github.com/TeamHorizon/android_system_core into teen  [JavAster]
-35699cd  libion: save errno value  [Liam Mark]
-
- * vendor/paosp
-5bdc948  readme: add op3 tree link  [edi194]
-558d022  ota: Naming improvements  [Mateusz Korzeniewski]
-a53ece8  Clean-ups  [Mateusz Korzeniewski]
-3c27bae  Merge pull request #3 from p8tgames/patch-1  [Mateusz Korzeniewski]
-5d82114  add god  [P8tGames]
-da6b04d  README: add @4PERTURE to maintainer list  [Mateusz Korzeniewski]
-256bebb  we don't need that  [edi194]
-2692aad  Update ota.mk  [edi194]
-0017f7a  It's fkin awesome  [JavAster]
-2a19b45  Merge branch 'p' of https://github.com/TeamHorizon/vendor_xenonhd into teen  [JavAster]
-4638268  Update ota.mk  [edi194]
-8942c1f  OTAAA  [edi194]
-5da6456  kernel.mk: Support kernels that use LTO  [Nathan Chancellor]
-c88ac3a  verity_tool: Implement status getter  [Christopher N. Hesse]
-
- * vendor/xiaomi
-3ac7243  beryllium: Ship FM blobs  [Henrique Silva]
-e60e787  beryllium: Build qti-telephony-common from source  [Henrique Silva]
 
