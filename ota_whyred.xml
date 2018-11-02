@@ -6,23 +6,23 @@
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sia.pixeldrain.com/api/file/BBeHCU1e</RomUrl>
+                description="Download ROM">https://sia.pixeldrain.com/api/file/BBeHCU1e</RomUrl>
             <MD5Url
                 id="md5"
                 title=""
-                description="">https://sia.pixeldrain.com/api/file/TB4JYj3b</MD5Url>
+                description="Download MD5 of the latest build">https://sia.pixeldrain.com/api/file/TB4JYj3b</MD5Url>
             <OpenGappsUrl
                 id="gapps"
                 title=""
-                description="">http://opengapps.org</OpenGappsUrl>
+                description="OpenGapps">http://opengapps.org</OpenGappsUrl>
             <ChangelogUrl
                 id="changelog"
                 title=""
-                description="">https://raw.githubusercontent.com/pornypie/OTAconfig/teen/changelog/changelog-whyred.txt</ChangelogUrl>
+                description="Changelog">https://raw.githubusercontent.com/pornypie/OTAconfig/teen/changelog/changelog-whyred.txt</ChangelogUrl>
             <DonateUrl
                 id="donate"
                 title=""
-                description="">https://www.paypal.me/edi194</DonateUrl>
+                description="Donate">https://www.paypal.me/edi194</DonateUrl>
         </whyred>
     </Pie>
 </XenonOTA>
