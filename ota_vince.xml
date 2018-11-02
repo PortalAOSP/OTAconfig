@@ -2,7 +2,7 @@
 <XenonOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Pie>
         <vince>
-            <Filename>PAOSP-creamPie-181027-Amateur-vince</Filename>
+            <Filename>PAOSP_creamPie-181027-Amateur-vince</Filename>
             <RomUrl
                 id="rom"
                 title=""

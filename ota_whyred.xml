@@ -2,7 +2,7 @@
 <XenonOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Pie>
         <whyred>
-            <Filename>PAOSP-creamPie-181102-Teen</Filename>
+            <Filename>PAOSP_creamPie-181102-Teen</Filename>
             <RomUrl
                 id="rom"
                 title=""
