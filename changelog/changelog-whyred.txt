@@ -1,4 +1,32 @@
 ====================
+     2018-11-03    
+====================
+
+ * hardware/qcom/fm
+80ebd2f  fm: Drop unnecessary dependencies  [Bruno Martins]
+
+ * manifest
+311704e  Remove Jelly  [edi194]
+1342d75  It doesn't work anyway  [edi194]
+b9d88ac  manifest: include PAOSP remote for sake of Treble  [Mateusz Korzeniewski]
+
+ * packages/apps/PornApps
+d13c3ba  Add Focus for now  [edi194]
+
+ * packages/apps/SetupWizard
+9ddea70  logo: now this is correct  [edi194]
+c965d90  Update accent color  [edi194]
+
+ * vendor/paosp
+5830a4a  Replace Jelly with Focus  [edi194]
+5c92d48  hm  [edi194]
+83b7d16  kurwa xd  [edi194]
+1109ac7  uh  [edi194]
+
+ * vendor/qcom/opensource/dataservices
+86c525e  librmnetctl: Use generated kernel headers  [Han Wang]
+
+====================
      2018-11-02    
 ====================
 
@@ -8,6 +36,23 @@
  * device/xiaomi/whyred
 c0c82ff  japierdole debil  [edi194]
 25d4222  Add paypal link  [edi194]
+
+ * hardware/qcom/audio-caf/msm8974
+dee2005  audio: Use generated kernel headers  [Arne Coucheron]
+
+ * hardware/qcom/audio-caf/msm8994
+685eb19  audio: Use generated kernel headers  [Arne Coucheron]
+804ef7e  Use header lib instead of using global include path  [Arne Coucheron]
+
+ * hardware/qcom/display-caf/msm8994
+4bab834  display: Use generated kernel headers  [Arne Coucheron]
+e52dd1e  Use header lib instead of using global include path  [Arne Coucheron]
+
+ * hardware/qcom/media-caf/msm8974
+8067951  media: Use generated kernel headers  [Arne Coucheron]
+
+ * hardware/qcom/media-caf/msm8994
+64f46f7  media: Use generated kernel headers  [Arne Coucheron]
 
  * manifest
 000e491  FM enable & Lineage SettingsIntelligence  [edi194]
@@ -55,7 +100,12 @@ f6e41b0  Increase time limit of search task  [Qiulu Yang]
 787f7d3  Use header lib instead of using global include path  [Arne Coucheron]
 
  * hardware/qcom/display-caf/msm8974
+b1f0d11  display: Use generated kernel headers  [Arne Coucheron]
 ac3c564  Use header lib instead of using global include path  [Jiyong Park]
+
+ * vendor/codeaurora/telephony
+aeec539  telephony-ext: Move to Android.bp  [Rashed Abdel-Tawab]
+0748e5d  telephony: Allow devices to provide their own telephony-ext  [Dan Pasanen]
 
 ====================
      2018-10-29    
@@ -111,11 +161,4 @@ b22d515  jni: Resolve V4L2_CID_AUDIO_MUTE redefinitions  [Adrian DC]
 c3b303b  libfm_jni: use proper nativehelper headers  [Steven Moreland]
 263178b  jni/libfm_jni: Ignore unused parameters from APIs  [Adrian DC]
 0c0e63f  jni/libfm_jni: Resolve FM_DEVICE_PATH R/O open flag  [Adrian DC]
-
-====================
-     2018-10-27    
-====================
-
- * build/make
-b297891  Update ota_from_target_files.py  [edi194]
 
