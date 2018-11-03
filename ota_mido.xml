@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XenonOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Pie>
-        <whyred>
-            <Filename>PAOSP_creamPie-181101-Teen</Filename>
+        <mido>
+            <Filename>PAOSP_creamPie-181103-Teen</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sia.pixeldrain.com/api/file/NaLbJ9I9</RomUrl>
+                description="Download ROM">https://sia.pixeldrain.com/api/file/p61-HbrE</RomUrl>
             <MD5Url
                 id="md5"
                 title=""
-                description="">https://sia.pixeldrain.com/api/file/INOnQECh</MD5Url>
+                description="Download MD5 of the latest build">https://sia.pixeldrain.com/api/file/sX6s-XlI</MD5Url>
             <OpenGappsUrl
                 id="gapps"
                 title=""
-                description="">http://opengapps.org</OpenGappsUrl>
+                description="OpenGapps">http://opengapps.org</OpenGappsUrl>
             <ChangelogUrl
                 id="changelog"
                 title=""
-                description="">https://raw.githubusercontent.com/pornypie/OTAconfig/teen/changelog/changelog-mido.txt</ChangelogUrl>
+                description="Changelog">https://raw.githubusercontent.com/pornypie/OTAconfig/teen/changelog/changelog-mido.txt</ChangelogUrl>
             <DonateUrl
                 id="donate"
                 title=""
-                description="">https://downloadmoreram.com</DonateUrl>
+                description="Donate">https://downloadmoreram.com</DonateUrl>
         </whyred>
     </Pie>
 </XenonOTA>
