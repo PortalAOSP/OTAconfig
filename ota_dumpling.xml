@@ -2,15 +2,15 @@
 <XenonOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Pie>
         <dumpling>
-            <Filename>PAOSP_creamPie-181103-Teen</Filename>
+            <Filename>PAOSP_creamPie-181104-Teen</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="Download ROM">placeholder</RomUrl>
+                description="Download ROM">https://sia.pixeldrain.com/api/file/utRCgwDn</RomUrl>
             <MD5Url
                 id="md5"
                 title=""
-                description="Download MD5 of the latest build">placeholder</MD5Url>
+                description="Download MD5 of the latest build">https://sia.pixeldrain.com/api/file/WxjX-UV_</MD5Url>
             <OpenGappsUrl
                 id="gapps"
                 title=""
@@ -22,7 +22,7 @@
             <DonateUrl
                 id="donate"
                 title=""
-                description="Donate">placeholder</DonateUrl>
+                description="Donate">http://pornhub.com</DonateUrl>
         </dumpling>
     </Pie>
 </XenonOTA>
