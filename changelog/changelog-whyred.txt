@@ -1,6 +1,38 @@
 ====================
+     2018-11-04    
+====================
+
+ * manifest
+7912a69  Gallery2: delet dys  [edi194]
+
+ * packages/apps/PornApps
+cc9d61c  Merge branch 'p' of https://github.com/pornypie/android_packages_apps_PornApps into p  [edi194]
+504d681  Add CameraRoll [1/2]  [edi194]
+c0d3944  wait did i just lawnchair this  [Mateusz Korzeniewski]
+a729d30  Include PinkPipe [2/2]  [Mateusz Korzeniewski]
+9b42444  Add PinkPipe 161 CI build  [Mateusz Korzeniewski]
+
+ * packages/apps/Settings
+38cf2a8  Revert "Settings: Use seekbar to allow setting arbitrary animation values"  [edi194]
+
+ * vendor/paosp
+9452a5c  Add CameraRoll [2/2]  [edi194]
+ee7556b  Include PinkPipe [1/2]  [Mateusz Korzeniewski]
+c7fdb77  Update dumpling link  [edi194]
+
+====================
      2018-11-03    
 ====================
+
+ * packages/providers/MediaProvider
+c8d70fe  MediaProvider: Add read storage permission  [Luca Stefani]
+
+====================
+     2018-11-02    
+====================
+
+ * build/make
+0b19722  Remove restrictions  [edi194]
 
  * hardware/qcom/fm
 80ebd2f  fm: Drop unnecessary dependencies  [Bruno Martins]
@@ -9,9 +41,13 @@
 311704e  Remove Jelly  [edi194]
 1342d75  It doesn't work anyway  [edi194]
 b9d88ac  manifest: include PAOSP remote for sake of Treble  [Mateusz Korzeniewski]
+000e491  FM enable & Lineage SettingsIntelligence  [edi194]
 
  * packages/apps/PornApps
 d13c3ba  Add Focus for now  [edi194]
+
+ * packages/apps/Settings
+45b4692e  Settings: Improve phone number preference ordering  [edi194]
 
  * packages/apps/SetupWizard
 9ddea70  logo: now this is correct  [edi194]
@@ -23,15 +59,15 @@ c965d90  Update accent color  [edi194]
 83b7d16  kurwa xd  [edi194]
 1109ac7  uh  [edi194]
 
+ * vendor/qcom/opensource/audio
+245fdbe  Merge tag 'LA.UM.7.3.r1-06100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into lineage-16.0  [Bruno Martins]
+
  * vendor/qcom/opensource/dataservices
 86c525e  librmnetctl: Use generated kernel headers  [Han Wang]
 
 ====================
-     2018-11-02    
+     2018-11-01    
 ====================
-
- * build/make
-0b19722  Remove restrictions  [edi194]
 
  * device/xiaomi/whyred
 c0c82ff  japierdole debil  [edi194]
@@ -55,27 +91,23 @@ e52dd1e  Use header lib instead of using global include path  [Arne Coucheron]
 64f46f7  media: Use generated kernel headers  [Arne Coucheron]
 
  * manifest
-000e491  FM enable & Lineage SettingsIntelligence  [edi194]
 74aa405  Add Wireguard  [edi194]
 
  * packages/apps/PornApps
 2e1b5b8  Add Wireguard app  [edi194]
 
- * packages/apps/Settings
-45b4692e  Settings: Improve phone number preference ordering  [edi194]
-
  * system/sepolicy
 12558e9  Build sepolicy tools with Android.bp.  [Tri Vo]
 
 ====================
-     2018-11-01    
+     2018-10-31    
 ====================
 
  * vendor/xiaomi
 92473d4  beryllium: Fix hotspot encryption  [TheScarastic]
 
 ====================
-     2018-10-31    
+     2018-10-30    
 ====================
 
  * device/qcom/sepolicy
@@ -88,7 +120,7 @@ fff950d  legacy: Correctly label display.qservice  [Ethan Chen]
 f6e41b0  Increase time limit of search task  [Qiulu Yang]
 
 ====================
-     2018-10-30    
+     2018-10-29    
 ====================
 
  * device/qcom/sepolicy-legacy
@@ -106,59 +138,3 @@ ac3c564  Use header lib instead of using global include path  [Jiyong Park]
  * vendor/codeaurora/telephony
 aeec539  telephony-ext: Move to Android.bp  [Rashed Abdel-Tawab]
 0748e5d  telephony: Allow devices to provide their own telephony-ext  [Dan Pasanen]
-
-====================
-     2018-10-29    
-====================
-
- * system/bt
-ac0efd0  Fix for Bluetooth device name is resetting to default name after reboot  [Aiswarya Cyriac]
-a7fb51f  Add support to force disable enhanced sco commands  [cb]
-799aa70  Prevent abort in case of command timeout  [Luke Zhang]
-62b49d1  Bluetooth: Read BLE vendor capability to proceed on Secure conn  [Srinu Jella]
-
-====================
-     2018-10-28    
-====================
-
- * hardware/qcom/fm
-d63631d  FM: adaptive icon  [Asher Simonds]
-56f8937  FM: Revamp notifications  [Konsta]
-0d265e0  FM: Convert FM transmitter notifications to use NotificationChannel  [Bruno Martins]
-42e939e  FM: Fix KHz->kHz  [Michael W]
-8b5d6fe  FM: Convert regional band arrays to string references  [Michael Bestas]
-1268478  FM: Update India bands  [Danesh M]
-2a18665  FM: Fix headphone icon  [Ed Falk]
-17ea8f5  FM: Fix settings UI bugs  [Ed Falk]
-28232b3  FM: Localization of band types  [Ed Falk]
-ee308b8  FM: improved band selection  [Ed Falk]
-940f9cc  FM: Select band based on country  [Ed Falk]
-1b93ad1  FM: Keep track of scanned frequencies in service  [Danesh M]
-2c300cb  FM: Ensure scan state is kept in sync  [Danesh M]
-eb38cd1  FM: The collect channel disappear when quit FM  [lijun.xie]
-746c26a  FM: Fix status text to reflect when FM is enabled.  [Martin Brabham]
-ec5cc45  FM: fix mRadioTextScroller usage in transmitter activity  [Hamster Tian]
-25f6514  FM: Launch station list automatically after scan  [Danesh M]
-6f49eae  FM: reenable radio text visibility after station info updated  [Edward Wang]
-b6e6d23  FM: Store tag num/value in sequence  [Edward Wang]
-5fa87b8  FM: retune last frequency when resume after call  [Edward Wang]
-7f65a24  FM: materialize  [linuxx]
-ab7c1ce  FM: add Indonesia  [Raj Yengisetty]
-d1fbe98  FM: Cleanup resources  [Michael Bestas]
-f0c0124  FM: Add property to force use internal antenna  [Brinly Taylor]
-4689a95  FM: Switch file extension to aac  [Danesh M]
-2ba9452  FM: Call unregister in onPause  [Danesh M]
-2534485  FM: Scanned frequencies are saved in ascending ordering  [Raj Yengisetty]
-be25cd0  FM: Re-add RDS fields to UI  [Danesh M]
-632a25b  FM: Make default country an overlay  [Danesh M]
-239fb60  FM: Restore seek arrows  [Danesh M]
-1910c69  FM: Re-vamp UI  [Danesh M]
-81cf67d  FM: Break bootclasspath dependency  [Ricardo Cerqueira]
-b80c489  Allow library to be used by apps directly  [Ricardo Cerqueira]
-0fb6155  jni: Resolve -Wwritable-strings warnings in helium FW library variables  [LuK1337]
-b22d515  jni: Resolve V4L2_CID_AUDIO_MUTE redefinitions  [Adrian DC]
-624581f  jni: Resolve equality comparisons with extraneous parentheses  [Adrian DC]
-c3b303b  libfm_jni: use proper nativehelper headers  [Steven Moreland]
-263178b  jni/libfm_jni: Ignore unused parameters from APIs  [Adrian DC]
-0c0e63f  jni/libfm_jni: Resolve FM_DEVICE_PATH R/O open flag  [Adrian DC]
-
