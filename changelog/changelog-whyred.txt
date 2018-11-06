@@ -1,6 +1,53 @@
 ====================
-     2018-11-04    
+     2018-11-06    
 ====================
+
+ * device/xiaomi/whyred
+80b4ad9  Merge pull request #1 from edi184/pie  [edi194]
+d0f4358  Update from PE  [edi194]
+
+ * frameworks/base
+c54c932  Deeerp  [edi194]
+4a3fd7a  Update accent  [edi194]
+7838e76  Update colors.xml  [edi194]
+0c2cf93  fix this white bar above navigation bar  [edi194]
+ca18823  eh  [edi194]
+84eee5e  wkurwiłem się  [edi194]
+
+ * packages/apps/PornApps
+755e7f9  Add Pornhub [1/2]  [edi194]
+
+ * packages/apps/SetupWizard
+f2efecd  Revert "let's seee"  [edi194]
+6d46137  let's seee  [edi194]
+
+ * vendor/paosp
+c603ec5  Add Pornhub [2/2]  [edi194]
+797d210  Dark theme fixes part 69 vol 2  [edi194]
+0976fbe  Dark theme fixes part 69  [edi194]
+8246ae4  Check this now  [edi194]
+
+ * vendor/xiaomi
+44c26f7  sdm845 targets: Move to common P blobs  [Bruno Martins]
+eac5448  beryllium: Add aptX libs  [TheScarastic]
+1fa259f  whyred: Update blobs from Nokia 7 Plus  [GuaiYiHu]
+ff2ac92  whyred: Remove wcnss_filter  [GuaiYiHu]
+6bafab6  whyred: Update vendor blobs from MIUI 8.10.25  [GuaiYiHu]
+45cd80f  Import whyred vendor from https://github.com/PixelExperience-Devices/vendor_xiaomi_whyred  [Henrique Silva]
+80d8ea8  beryllium: Ship FM blobs  [Henrique Silva]
+5b6ceba  beryllium: Build qti-telephony-common from source  [Henrique Silva]
+
+====================
+     2018-11-05    
+====================
+
+ * hardware/qcom/display
+ae340ef  msm8084: Use generated kernel headers  [Arne Coucheron]
+17eb67a  msm8084: display: Don't use gnu-oldstyle field designators  [Elektroschmock]
+65f6d18  msm8084: Add additional build flags to avoid errors  [gabrielgagz]
+4350ca3  msm8084: Use libhwui.so instead of libskia.so  [Alexey Polyudov]
+fce1c70  msm8084: Include what we use.  [Dan Albert]
+980c623  hwc: msm8084: Set ioprio for vsync thread  [Steve Kondik]
 
  * manifest
 7912a69  Gallery2: delet dys  [edi194]
@@ -8,15 +55,41 @@
  * packages/apps/PornApps
 cc9d61c  Merge branch 'p' of https://github.com/pornypie/android_packages_apps_PornApps into p  [edi194]
 504d681  Add CameraRoll [1/2]  [edi194]
-c0d3944  wait did i just lawnchair this  [Mateusz Korzeniewski]
-a729d30  Include PinkPipe [2/2]  [Mateusz Korzeniewski]
-9b42444  Add PinkPipe 161 CI build  [Mateusz Korzeniewski]
 
  * packages/apps/Settings
 38cf2a8  Revert "Settings: Use seekbar to allow setting arbitrary animation values"  [edi194]
 
+ * system/bt
+602fb4d  Fix "Disable Absolute Volume" Bluetooth developer option  [Ted]
+73809c9  Run the wakelock JNI callbacks on the JNI thread  [Pavlin Radoslavov]
+3bfe253  Fix out-of-bounds reading in btm_ble_vendor_capability_vsc_cmpl_cback  [Yamei Du]
+
  * vendor/paosp
+0268c50  TURBONOTCHEXPERIENCE  [edi194]
+6646d6c  SystemUI fixing  [edi194]
+b158140  Do it that way  [edi194]
+74cd116  Revert "i hope this'll work..."  [edi194]
+7f3e082  Revert "cheeecking things"  [edi194]
+b5aac2e  Revert "everything have everything and fuk u"  [edi194]
+5d72545  everything have everything and fuk u  [edi194]
+d569175  cheeecking things  [edi194]
+9b62ccd  i hope this'll work...  [edi194]
+7fc3395  kurwa nie umiem w cherry pick  [edi194]
 9452a5c  Add CameraRoll [2/2]  [edi194]
+
+====================
+     2018-11-04    
+====================
+
+ * packages/apps/PornApps
+c0d3944  wait did i just lawnchair this  [Mateusz Korzeniewski]
+a729d30  Include PinkPipe [2/2]  [Mateusz Korzeniewski]
+9b42444  Add PinkPipe 161 CI build  [Mateusz Korzeniewski]
+
+ * packages/providers/MediaProvider
+c8d70fe  MediaProvider: Add read storage permission  [Luca Stefani]
+
+ * vendor/paosp
 ee7556b  Include PinkPipe [1/2]  [Mateusz Korzeniewski]
 c7fdb77  Update dumpling link  [edi194]
 
@@ -24,8 +97,21 @@ c7fdb77  Update dumpling link  [edi194]
      2018-11-03    
 ====================
 
- * packages/providers/MediaProvider
-c8d70fe  MediaProvider: Add read storage permission  [Luca Stefani]
+ * manifest
+311704e  Remove Jelly  [edi194]
+
+ * packages/apps/PornApps
+d13c3ba  Add Focus for now  [edi194]
+
+ * packages/apps/SetupWizard
+9ddea70  logo: now this is correct  [edi194]
+c965d90  Update accent color  [edi194]
+
+ * vendor/paosp
+5830a4a  Replace Jelly with Focus  [edi194]
+
+ * vendor/qcom/opensource/audio
+245fdbe  Merge tag 'LA.UM.7.3.r1-06100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into lineage-16.0  [Bruno Martins]
 
 ====================
      2018-11-02    
@@ -34,33 +120,47 @@ c8d70fe  MediaProvider: Add read storage permission  [Luca Stefani]
  * build/make
 0b19722  Remove restrictions  [edi194]
 
+ * hardware/qcom/audio-caf/msm8974
+dee2005  audio: Use generated kernel headers  [Arne Coucheron]
+
+ * hardware/qcom/audio-caf/msm8994
+685eb19  audio: Use generated kernel headers  [Arne Coucheron]
+804ef7e  Use header lib instead of using global include path  [Arne Coucheron]
+
+ * hardware/qcom/bt-caf
+9d32e69  libbt-vendor: Use generated kernel headers  [Bruno Martins]
+
+ * hardware/qcom/display-caf/msm8994
+4bab834  display: Use generated kernel headers  [Arne Coucheron]
+e52dd1e  Use header lib instead of using global include path  [Arne Coucheron]
+
  * hardware/qcom/fm
 80ebd2f  fm: Drop unnecessary dependencies  [Bruno Martins]
 
+ * hardware/qcom/media-caf/msm8974
+8067951  media: Use generated kernel headers  [Arne Coucheron]
+
+ * hardware/qcom/media-caf/msm8994
+64f46f7  media: Use generated kernel headers  [Arne Coucheron]
+
+ * hardware/qcom/wlan-caf
+bb4e25f  wifi-hal: Use generated kernel headers  [Bruno Martins]
+
  * manifest
-311704e  Remove Jelly  [edi194]
 1342d75  It doesn't work anyway  [edi194]
 b9d88ac  manifest: include PAOSP remote for sake of Treble  [Mateusz Korzeniewski]
 000e491  FM enable & Lineage SettingsIntelligence  [edi194]
 
- * packages/apps/PornApps
-d13c3ba  Add Focus for now  [edi194]
-
  * packages/apps/Settings
 45b4692e  Settings: Improve phone number preference ordering  [edi194]
 
- * packages/apps/SetupWizard
-9ddea70  logo: now this is correct  [edi194]
-c965d90  Update accent color  [edi194]
+ * system/sepolicy
+12558e9  Build sepolicy tools with Android.bp.  [Tri Vo]
 
  * vendor/paosp
-5830a4a  Replace Jelly with Focus  [edi194]
 5c92d48  hm  [edi194]
 83b7d16  kurwa xd  [edi194]
 1109ac7  uh  [edi194]
-
- * vendor/qcom/opensource/audio
-245fdbe  Merge tag 'LA.UM.7.3.r1-06100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into lineage-16.0  [Bruno Martins]
 
  * vendor/qcom/opensource/dataservices
 86c525e  librmnetctl: Use generated kernel headers  [Han Wang]
@@ -73,22 +173,14 @@ c965d90  Update accent color  [edi194]
 c0c82ff  japierdole debil  [edi194]
 25d4222  Add paypal link  [edi194]
 
- * hardware/qcom/audio-caf/msm8974
-dee2005  audio: Use generated kernel headers  [Arne Coucheron]
+ * hardware/qcom/audio-caf/msm8996
+50a58aa  Merge tag 'LA.UM.7.6.r1-03100-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD  [Artem Borisov]
 
- * hardware/qcom/audio-caf/msm8994
-685eb19  audio: Use generated kernel headers  [Arne Coucheron]
-804ef7e  Use header lib instead of using global include path  [Arne Coucheron]
+ * hardware/qcom/display-caf/msm8996
+fd48880  Merge tag 'LA.UM.7.6.r1-03100-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD  [Artem Borisov]
 
- * hardware/qcom/display-caf/msm8994
-4bab834  display: Use generated kernel headers  [Arne Coucheron]
-e52dd1e  Use header lib instead of using global include path  [Arne Coucheron]
-
- * hardware/qcom/media-caf/msm8974
-8067951  media: Use generated kernel headers  [Arne Coucheron]
-
- * hardware/qcom/media-caf/msm8994
-64f46f7  media: Use generated kernel headers  [Arne Coucheron]
+ * hardware/qcom/media-caf/msm8996
+3dc2f88  Merge tag 'LA.UM.7.6.r1-03100-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD  [Artem Borisov]
 
  * manifest
 74aa405  Add Wireguard  [edi194]
@@ -96,45 +188,13 @@ e52dd1e  Use header lib instead of using global include path  [Arne Coucheron]
  * packages/apps/PornApps
 2e1b5b8  Add Wireguard app  [edi194]
 
- * system/sepolicy
-12558e9  Build sepolicy tools with Android.bp.  [Tri Vo]
-
 ====================
      2018-10-31    
-====================
-
- * vendor/xiaomi
-92473d4  beryllium: Fix hotspot encryption  [TheScarastic]
-
-====================
-     2018-10-30    
 ====================
 
  * device/qcom/sepolicy
 4a25e17  sepolicy: Allow perf HAL to set freq props  [Bruno Martins]
 
- * device/qcom/sepolicy-legacy
-fff950d  legacy: Correctly label display.qservice  [Ethan Chen]
-
  * packages/apps/SettingsIntelligence
 f6e41b0  Increase time limit of search task  [Qiulu Yang]
 
-====================
-     2018-10-29    
-====================
-
- * device/qcom/sepolicy-legacy
-668f663  sepolicy: Allow android service to write on tombstones  [Ajit Vaishya]
-64fdeae  Change to compile due to hostapd.te removal  [Sridhar Parasuram]
-0feb07d  Revert "sepol: hostapd is now hal_wifi_hostapd"  [Michael Bestas]
-
- * hardware/qcom/audio-caf/msm8974
-787f7d3  Use header lib instead of using global include path  [Arne Coucheron]
-
- * hardware/qcom/display-caf/msm8974
-b1f0d11  display: Use generated kernel headers  [Arne Coucheron]
-ac3c564  Use header lib instead of using global include path  [Jiyong Park]
-
- * vendor/codeaurora/telephony
-aeec539  telephony-ext: Move to Android.bp  [Rashed Abdel-Tawab]
-0748e5d  telephony: Allow devices to provide their own telephony-ext  [Dan Pasanen]
