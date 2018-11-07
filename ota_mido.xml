@@ -2,15 +2,15 @@
 <XenonOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Pie>
         <mido>
-            <Filename>PAOSP_creamPie-181104-Teen</Filename>
+            <Filename>PAOSP_creamPie-181107-Teen</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="Download ROM">https://sia.pixeldrain.com/api/file/1d6aG9kN</RomUrl>
+                description="Download ROM">https://sia.pixeldrain.com/api/file/zJstzRoz</RomUrl>
             <MD5Url
                 id="md5"
                 title=""
-                description="Download MD5 of the latest build">https://sia.pixeldrain.com/api/file/MvfwueLa</MD5Url>
+                description="Download MD5 of the latest build">https://sia.pixeldrain.com/api/file/wTDBQr2G</MD5Url>
             <OpenGappsUrl
                 id="gapps"
                 title=""
