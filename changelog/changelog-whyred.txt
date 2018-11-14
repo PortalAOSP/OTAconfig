@@ -1,200 +1,446 @@
 ====================
-     2018-11-06    
+     2018-11-14    
 ====================
 
- * device/xiaomi/whyred
-80b4ad9  Merge pull request #1 from edi184/pie  [edi194]
-d0f4358  Update from PE  [edi194]
+ * bionic
+e289aff  Merge pull request #1 from TeamHorizon/p  [edi194]
+721bff4  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+6c10745  remove bionic-compile-time-tests-g++  [Sajid Dalvi]
+
+ * build/make
+6c16ba7  Merge pull request #3 from TeamHorizon/p  [edi194]
+48a98c7  build: Also replace techpack/audio old-style kernel header  [Bruno Martins]
+64f8f32  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * build/soong
+f1fd173  Merge pull request #1 from TeamHorizon/p  [edi194]
+691c520  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * development
+701d554  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * external/f2fs-tools
+9195db0  Merge tag 'android-9.0.0_r16' into lineage-16.0-android-9.0.0_r16  [Luca Stefani]
+
+ * frameworks/av
+b0d4d1d  Merge pull request #1 from TeamHorizon/p  [edi194]
+2306c7c  Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_frameworks_av into HEAD  [dadi11]
+b376590  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+bb984c4  CameraService: Support calling addStates in enumerateProviders  [Artem Borisov]
 
  * frameworks/base
-c54c932  Deeerp  [edi194]
-4a3fd7a  Update accent  [edi194]
-7838e76  Update colors.xml  [edi194]
-0c2cf93  fix this white bar above navigation bar  [edi194]
-ca18823  eh  [edi194]
-84eee5e  wkurwiłem się  [edi194]
+73fd421  Update NavigationBarView.java  [edi194]
+a096f4b  Update KeyguardBottomAreaView.java  [edi194]
+1f413bc  Update FingerprintUnlockController.java  [edi194]
+16096d1  Update dimens.xml  [edi194]
+5be4058  Update metrics_constants.proto  [edi194]
+aeb3c27  Pornify  [edi194]
+4c15b64  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+712e6d2  ConsumerIR: Support Huawei's DSP chip implementation  [Artem Borisov]
 
- * packages/apps/PornApps
-755e7f9  Add Pornhub [1/2]  [edi194]
+ * frameworks/native
+54bb557  Merge pull request #1 from TeamHorizon/p  [edi194]
+62ee02e  Revert screenshot changes to exclude black cutout  [Luca Stefani]
+ad1bc43  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+31bf01c  sf: Add prop based default config for client composition  [Chris]
+e35b14e  sf: Fix damage for Huawei compositor  [Pierre-Hugues Husson]
+90f4a2a  sf: Don't enforce presentOrValidate in HWComposer  [Pierre-Hugues Husson]
+ec267a7  libui: Ignore invalid usage bits in buffer descriptor  [Artem Borisov]
 
- * packages/apps/SetupWizard
-f2efecd  Revert "let's seee"  [edi194]
-6d46137  let's seee  [edi194]
+ * frameworks/opt/net/wifi
+abd1297  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
 
- * vendor/paosp
-c603ec5  Add Pornhub [2/2]  [edi194]
-797d210  Dark theme fixes part 69 vol 2  [edi194]
-0976fbe  Dark theme fixes part 69  [edi194]
-8246ae4  Check this now  [edi194]
+ * frameworks/opt/telephony
+25e95f2  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+2b35e11  Telephony: Do not call onUssdRelease for Huawei RIL  [Artem Borisov]
+73f36a9  telephony: Query LTE thresholds from CarrierConfig  [Artem Borisov]
+e2815d9  telephony: Squashed support of dynamic signal strength thresholds  [Paul Keith]
+7d841a6  Implement signal strength hacks used on Huawei devices  [codeworkx]
 
- * vendor/xiaomi
-44c26f7  sdm845 targets: Move to common P blobs  [Bruno Martins]
-eac5448  beryllium: Add aptX libs  [TheScarastic]
-1fa259f  whyred: Update blobs from Nokia 7 Plus  [GuaiYiHu]
-ff2ac92  whyred: Remove wcnss_filter  [GuaiYiHu]
-6bafab6  whyred: Update vendor blobs from MIUI 8.10.25  [GuaiYiHu]
-45cd80f  Import whyred vendor from https://github.com/PixelExperience-Devices/vendor_xiaomi_whyred  [Henrique Silva]
-80d8ea8  beryllium: Ship FM blobs  [Henrique Silva]
-5b6ceba  beryllium: Build qti-telephony-common from source  [Henrique Silva]
+ * hardware/broadcom/wlan
+7f14d25  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
 
-====================
-     2018-11-05    
-====================
+ * hardware/qcom/audio/default
+dd208e3  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * hardware/qcom/bootctrl
+8afedbb  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
 
  * hardware/qcom/display
-ae340ef  msm8084: Use generated kernel headers  [Arne Coucheron]
-17eb67a  msm8084: display: Don't use gnu-oldstyle field designators  [Elektroschmock]
-65f6d18  msm8084: Add additional build flags to avoid errors  [gabrielgagz]
-4350ca3  msm8084: Use libhwui.so instead of libskia.so  [Alexey Polyudov]
-fce1c70  msm8084: Include what we use.  [Dan Albert]
-980c623  hwc: msm8084: Set ioprio for vsync thread  [Steve Kondik]
+f1a7852  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * hardware/qcom/gps
+90acec9  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * hardware/qcom/media
+5a65b2f  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * lineage-sdk
+6d0a78e  Rebrand  [edi194]
 
  * manifest
-7912a69  Gallery2: delet dys  [edi194]
+0903e90  9.0.0_r16 & some more repos  [edi194]
 
- * packages/apps/PornApps
-cc9d61c  Merge branch 'p' of https://github.com/pornypie/android_packages_apps_PornApps into p  [edi194]
-504d681  Add CameraRoll [1/2]  [edi194]
+ * packages/apps/Camera2
+e9fce7b  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * packages/apps/CarrierConfig
+a8c2da7  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * packages/apps/Contacts
+a0a1a12  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * packages/apps/DeskClock
+35d4268  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * packages/apps/DocumentsUI
+5ca116b  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * packages/apps/Nfc
+0b8f144  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * packages/apps/PackageInstaller
+cf8bb04  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * packages/apps/PornOTA
+28e05d3  Update ic_nav_android.xml  [edi194]
 
  * packages/apps/Settings
-38cf2a8  Revert "Settings: Use seekbar to allow setting arbitrary animation values"  [edi194]
+d441d29  Uh  [edi194]
+0206250  Pornify  [edi194]
+4898a44  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
 
- * system/bt
-602fb4d  Fix "Disable Absolute Volume" Bluetooth developer option  [Ted]
-73809c9  Run the wakelock JNI callbacks on the JNI thread  [Pavlin Radoslavov]
-3bfe253  Fix out-of-bounds reading in btm_ble_vendor_capability_vsc_cmpl_cback  [Yamei Du]
+ * packages/apps/Stk
+a921396  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
 
- * vendor/paosp
-0268c50  TURBONOTCHEXPERIENCE  [edi194]
-6646d6c  SystemUI fixing  [edi194]
-b158140  Do it that way  [edi194]
-74cd116  Revert "i hope this'll work..."  [edi194]
-7f3e082  Revert "cheeecking things"  [edi194]
-b5aac2e  Revert "everything have everything and fuk u"  [edi194]
-5d72545  everything have everything and fuk u  [edi194]
-d569175  cheeecking things  [edi194]
-9b62ccd  i hope this'll work...  [edi194]
-7fc3395  kurwa nie umiem w cherry pick  [edi194]
-9452a5c  Add CameraRoll [2/2]  [edi194]
+ * packages/apps/StorageManager
+12c3438  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
 
-====================
-     2018-11-04    
-====================
+ * packages/apps/TvSettings
+71232e6  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
 
- * packages/apps/PornApps
-c0d3944  wait did i just lawnchair this  [Mateusz Korzeniewski]
-a729d30  Include PinkPipe [2/2]  [Mateusz Korzeniewski]
-9b42444  Add PinkPipe 161 CI build  [Mateusz Korzeniewski]
+ * packages/providers/ContactsProvider
+36aec72  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * packages/providers/DownloadProvider
+c869fa0  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
 
  * packages/providers/MediaProvider
-c8d70fe  MediaProvider: Add read storage permission  [Luca Stefani]
+718d380  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * packages/providers/TelephonyProvider
+5ba54eb  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * packages/services/Telecomm
+269cfb2  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * packages/services/Telephony
+b564fce  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+5605c28  Telephony: Support muting by RIL command  [Artem Borisov]
+
+ * system/bt
+2b0037d  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * system/core
+4addfc6  Merge pull request #1 from TeamHorizon/p  [edi194]
+2cc5a4e  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * system/extras
+dcc22d6  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * system/netd
+20499b5  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * system/security
+6e46041  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+
+ * system/sepolicy
+dbcf542  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
+3a0866a  Allow hal_usb access sysfs when in coredomain  [Artem Borisov]
+
+ * system/vold
+8930bc0  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
 
  * vendor/paosp
-ee7556b  Include PinkPipe [1/2]  [Mateusz Korzeniewski]
-c7fdb77  Update dumpling link  [edi194]
+9ba5c69  Update privapp-permissions-lineage.xml  [edi194]
+0ca62fa  Nie umiem w cherrypick v2  [edi194]
+cc9fd6c  Upstream  [edi194]
 
 ====================
-     2018-11-03    
+     2018-11-13    
 ====================
 
- * manifest
-311704e  Remove Jelly  [edi194]
+ * hardware/nxp/nfc
+25740c0  Prepend vendor. to NFC HAL service name  [Rashed Abdel-Tawab]
 
- * packages/apps/PornApps
-d13c3ba  Add Focus for now  [edi194]
-
- * packages/apps/SetupWizard
-9ddea70  logo: now this is correct  [edi194]
-c965d90  Update accent color  [edi194]
+ * packages/apps/Settings
+ef7a22f  Settings: Changelog Fragment - Set Title  [Devil7DK]
 
  * vendor/paosp
-5830a4a  Replace Jelly with Focus  [edi194]
-
- * vendor/qcom/opensource/audio
-245fdbe  Merge tag 'LA.UM.7.3.r1-06100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into lineage-16.0  [Bruno Martins]
+99dc713  apns: Add APN for a2mobile  [David Sn]
 
 ====================
-     2018-11-02    
+     2018-11-12    
 ====================
 
  * build/make
-0b19722  Remove restrictions  [edi194]
+5b55175  Merge branch 'p' of https://github.com/TeamHorizon/android_build into teen  [JavAster]
 
- * hardware/qcom/audio-caf/msm8974
-dee2005  audio: Use generated kernel headers  [Arne Coucheron]
+ * device/xiaomi/whyred
+42b1b1e  Pornify  [edi194]
 
- * hardware/qcom/audio-caf/msm8994
-685eb19  audio: Use generated kernel headers  [Arne Coucheron]
-804ef7e  Use header lib instead of using global include path  [Arne Coucheron]
+ * external/mksh
+d793597  mksh: Build a static library  [Steve Kondik]
 
- * hardware/qcom/bt-caf
-9d32e69  libbt-vendor: Use generated kernel headers  [Bruno Martins]
-
- * hardware/qcom/display-caf/msm8994
-4bab834  display: Use generated kernel headers  [Arne Coucheron]
-e52dd1e  Use header lib instead of using global include path  [Arne Coucheron]
-
- * hardware/qcom/fm
-80ebd2f  fm: Drop unnecessary dependencies  [Bruno Martins]
-
- * hardware/qcom/media-caf/msm8974
-8067951  media: Use generated kernel headers  [Arne Coucheron]
-
- * hardware/qcom/media-caf/msm8994
-64f46f7  media: Use generated kernel headers  [Arne Coucheron]
-
- * hardware/qcom/wlan-caf
-bb4e25f  wifi-hal: Use generated kernel headers  [Bruno Martins]
-
- * manifest
-1342d75  It doesn't work anyway  [edi194]
-b9d88ac  manifest: include PAOSP remote for sake of Treble  [Mateusz Korzeniewski]
-000e491  FM enable & Lineage SettingsIntelligence  [edi194]
-
- * packages/apps/Settings
-45b4692e  Settings: Improve phone number preference ordering  [edi194]
-
- * system/sepolicy
-12558e9  Build sepolicy tools with Android.bp.  [Tri Vo]
+ * packages/apps/PornOTA
+f56662c  Rebrand part 69  [edi194]
+1a7ed43  OTA: fixing v3  [edi194]
+f7a09ea  OTA: fixing v2  [edi194]
+b728b74  It's so easier to do like this.  [JavAster]
+7d1de16  XenonOTA - Allow User To Select Magisk Update Channel (Beta/Stable)  [Devil7DK]
+ed489bd  XenonOTA - Opt User to Wipe Data While Flashing  [Devil7DK]
 
  * vendor/paosp
-5c92d48  hm  [edi194]
-83b7d16  kurwa xd  [edi194]
-1109ac7  uh  [edi194]
-
- * vendor/qcom/opensource/dataservices
-86c525e  librmnetctl: Use generated kernel headers  [Han Wang]
+b1bc69d  overlays: fix derp & accent  [edi194]
+648c048  overlays: remove black theme  [edi194]
+ea99052  OTA: fixing  [edi194]
+03bd6b5  Porn it!  [JavAster]
+f8a5c0b  Merge branch 'p' of https://github.com/TeamHorizon/vendor_xenonhd into teen  [JavAster]
 
 ====================
-     2018-11-01    
+     2018-11-11    
 ====================
 
  * device/xiaomi/whyred
-c0c82ff  japierdole debil  [edi194]
-25d4222  Add paypal link  [edi194]
+6702168  whyred: address some more denials  [Akhil Narang]
 
- * hardware/qcom/audio-caf/msm8996
-50a58aa  Merge tag 'LA.UM.7.6.r1-03100-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD  [Artem Borisov]
+ * frameworks/base
+c1465af  SystemUI: Berry styles  [Joey]
 
- * hardware/qcom/display-caf/msm8996
-fd48880  Merge tag 'LA.UM.7.6.r1-03100-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD  [Artem Borisov]
+ * kernel/xiaomi/whyred
+7936f16  Merge tag 'v4.4.163' into pie  [Akhil Narang]
 
- * hardware/qcom/media-caf/msm8996
-3dc2f88  Merge tag 'LA.UM.7.6.r1-03100-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD  [Artem Borisov]
+ * lineage-sdk
+c3b4954  lineage-sdk: Use AOSP permission CHANGE_OVERLAY_PACKAGES for styles  [Sam Mortimer]
+5d16eef  sdk: Don't clear calling identify when calling IOverlayManager.setEnabled()  [LuK1337]
+bf2b1d3  lineage-sdk: Make styles init at system services ready  [Sam Mortimer]
 
  * manifest
-74aa405  Add Wireguard  [edi194]
+72e7231  Merge branch 'teen' of https://github.com/pornypie/platform_manifest into teen  [edi194]
+23a361a  manifest: Enable lineage styles overlays  [edi194]
 
- * packages/apps/PornApps
-2e1b5b8  Add Wireguard app  [edi194]
+ * packages/apps/LineageParts
+57018ef  LineageParts: Use AOSP permission CHANGE_OVERLAY_PACKAGES for styles  [Sam Mortimer]
 
-====================
-     2018-10-31    
-====================
+ * packages/apps/PornOTA
+f4dfcbd  XenonOTA - Disable Gapps & Magisk Checkboxes in Flash Dialogue If They Are No Available  [Devil7DK]
+21782b8  XenonOTA: Update README & add screenshots  [Daniel Sikorski]
+88c86a4  XenonOTA - Install Magisk Before GApps  [Devil7DK]
+76359c5  XenonOTA - Fix WaitDialog Not Showing Custom Messages  [Devil7DK]
+ef6278a  XenonOTA - Cleanup & Match App Theme with System Theme  [Devil7DK]
 
- * device/qcom/sepolicy
-4a25e17  sepolicy: Allow perf HAL to set freq props  [Bruno Martins]
+ * packages/apps/Settings
+45e9482  Settings: add Trust interface hook  [Joey]
+84dabbc  Settings: fix dark style issues  [Joey]
+88ce95e  Settings: Hide AOSP theme-related controllers  [Joey]
 
  * packages/apps/SettingsIntelligence
-f6e41b0  Increase time limit of search task  [Qiulu Yang]
+b3edeb4  Fix dark style issues  [LuK1337]
+
+ * prebuilts/clang/host/linux-x86
+aa36c50  Update prebuilt Clang to r344140b.  [Pirama Arumuga Nainar]
+
+ * vendor/paosp
+58f2676  ota: simplify ota xml file  [dadi11]
+e3101dd  ota: seperate official and experimental builds  [dadi11]
+ae9aeed  ota: remove donation link  [dadi11]
+
+====================
+     2018-11-10    
+====================
+
+ * kernel/xiaomi/whyred
+7a42697  Linux 4.4.163  [Greg Kroah-Hartman]
+8474c9b  x86/time: Correct the attribute on jiffies' definition  [Nathan Chancellor]
+80ab1e2  l2tp: hold tunnel socket when handling control frames in l2tp_ip and l2tp_ip6  [Guillaume Nault]
+8a1d3de  cpuidle: Do not access cpuidle_devices when !CONFIG_CPU_IDLE  [Catalin Marinas]
+74ede0a  x86/percpu: Fix this_cpu_read()  [Peter Zijlstra]
+4a2b54a  sched/fair: Fix throttle_list starvation with low CFS quota  [Phil Auld]
+c057f75  Input: elan_i2c - add ACPI ID for Lenovo IdeaPad 330-15IGM  [Mikhail Nikiforov]
+506617d  USB: fix the usbfs flag sanitization for control transfers  [Alan Stern]
+87f8db6  usb: gadget: storage: Fix Spectre v1 vulnerability  [Gustavo A. R. Silva]
+17275e0  cdc-acm: correct counting of UART states in serial state notification  [Tobias Herzog]
+17eb02c  IB/ucm: Fix Spectre v1 vulnerability  [Gustavo A. R. Silva]
+6ede39a  RDMA/ucma: Fix Spectre v1 vulnerability  [Gustavo A. R. Silva]
+3700bfc  ptp: fix Spectre v1 vulnerability  [Gustavo A. R. Silva]
+d1ce094  cachefiles: fix the race between cachefiles_bury_object() and rmdir(2)  [Al Viro]
+f2adb1f  ahci: don't ignore result code of ahci_reset_controller()  [Ard Biesheuvel]
+333de2f  crypto: shash - Fix a sleep-in-atomic bug in shash_setkey_unaligned  [Jia-Ju Bai]
+2e3ae53  mremap: properly flush TLB before releasing the page  [Linus Torvalds]
+abd46fc  rtnetlink: Disallow FDB configuration for non-Ethernet device  [Ido Schimmel]
+628a149  vhost: Fix Spectre V1 vulnerability  [Jason Wang]
+8de8589  net: drop skb on failure in ip_check_defrag()  [Cong Wang]
+fee37f1  sctp: fix race on sctp_id2asoc  [Marcelo Ricardo Leitner]
+104ed9e  r8169: fix NAPI handling under high load  [Heiner Kallweit]
+d5df0bd  net: stmmac: Fix stmmac_mdio_reset() when building stmmac as modules  [Niklas Cassel]
+9852807  net: socket: fix a missing-check bug  [Wenwen Wang]
+7fc851d  net: sched: gred: pass the right attribute to gred_change_table_def()  [Jakub Kicinski]
+9774903  net/ipv6: Fix index counter for unicast addresses in in6_dump_addrs  [David Ahern]
+2647feb  ipv6/ndisc: Preserve IPv6 control buffer if protocol error handlers are called  [Stefano Brivio]
+ef1cb6b  ipv6: mcast: fix a use-after-free in inet6_mc_check  [Eric Dumazet]
+4100be3  net: bridge: remove ipv6 zero address check in mcast queries  [Nikolay Aleksandrov]
+a151923  bridge: do not add port to router list when receives query with source 0.0.0.0  [Hangbin Liu]
+6f52608  perf tools: Disable parallelism for 'make clean'  [Rasmus Villemoes]
+25e2243  mtd: spi-nor: Add support for is25wp series chips  [Kimmo Rautkoski]
+fa2075b  fs/fat/fatent.c: add cond_resched() to fat_count_free_clusters()  [Khazhismel Kumykov]
+55df64d9  ARM: dts: imx53-qsb: disable 1.2GHz OPP  [Sascha Hauer]
+fbba23b  MIPS: DEC: Fix an int-handler.S CPU_DADDI_WORKAROUNDS regression  [Maciej W. Rozycki]
+a5ce963  igb: Remove superfluous reset to PHY and page 0 selection  [Christian Grönke]
+0f951e1  MIPS: microMIPS: Fix decoding of swsp16 instruction  [Matt Redfearn]
+83aa7d1  scsi: aacraid: Fix typo in blink status  [Raghava Aditya Renukunta]
+b1f4be0  bonding: avoid defaulting hard_header_len to ETH_HLEN on slave removal  [Paolo Abeni]
+1bd2b90  PM / devfreq: tegra: fix error return code in tegra_devfreq_probe()  [Gustavo A. R. Silva]
+dfb3a6a  ASoC: spear: fix error return code in spdif_in_probe()  [Gustavo A. R. Silva]
+87c7239  spi: xlp: fix error return code in xlp_spi_probe()  [Gustavo A. R. Silva]
+61d2a3e  spi/bcm63xx: fix error return code in bcm63xx_spi_probe()  [Gustavo A. R. Silva]
+f46b1dc  MIPS: Handle non word sized instructions when examining frame  [Matt Redfearn]
+8025a41  spi/bcm63xx-hspi: fix error return code in bcm63xx_hsspi_probe()  [Gustavo A. R. Silva]
+18747e4  usb: dwc3: omap: fix error return code in dwc3_omap_probe()  [Gustavo A. R. Silva]
+fd5939e  usb: ehci-omap: fix error return code in ehci_hcd_omap_probe()  [Gustavo A. R. Silva]
+0477192  usb: imx21-hcd: fix error return code in imx21_probe()  [Gustavo A. R. Silva]
+7f71f46  gpio: msic: fix error return code in platform_msic_gpio_probe()  [Gustavo A. R. Silva]
+20d01c5  sparc64: Fix exception handling in UltraSPARC-III memcpy.  [David S. Miller]
+b99152a  gpu: host1x: fix error return code in host1x_probe()  [Gustavo A. R. Silva]
+cc01408  sparc64 mm: Fix more TSB sizing issues  [Mike Kravetz]
+9954f18  video: fbdev: pxa3xx_gcu: fix error return code in pxa3xx_gcu_probe()  [Gustavo A. R. Silva]
+27e1382  tty: serial: sprd: fix error return code in sprd_probe()  [Gustavo A. R. Silva]
+414fb21  l2tp: hold socket before dropping lock in l2tp_ip{, 6}_recv()  [Guillaume Nault]
+44656b9  brcmfmac: Fix glom_skb leak in brcmf_sdiod_recv_chain  [Peter S. Housel]
+02bc531  gro: Allow tunnel stacking in the case of FOU/GUE  [Alexander Duyck]
+1523689  vti6: flush x-netns xfrm cache when vti interface is removed  [Nicolas Dichtel]
+c21f80e  ALSA: timer: Fix zero-division by continue of uninitialized instance  [Takashi Iwai]
+83aacb9  ixgbe: Correct X550EM_x revision check  [Mark Rustad]
+8366274  ixgbe: fix RSS limit for X550  [Emil Tantilov]
+fcac753  net/mlx5e: Correctly handle RSS indirection table when changing number of channels  [Tariq Toukan]
+40e9aba  net/mlx5e: Fix LRO modify  [Tariq Toukan]
+c97383a  ixgbevf: Fix handling of NAPI budget when multiple queues are enabled per vector  [William Dauchy]
+1b6a863  fuse: Dont call set_page_dirty_lock() for ITER_BVEC pages for async_dio  [Ashish Samant]
+4a3948c  drm/nouveau/fbcon: fix oops without fbdev emulation  [Pavel Roskin]
+e25dc63  bpf: generally move prog destruction to RCU deferral  [Daniel Borkmann]
+75c8542  usb-storage: fix bogus hardware error messages for ATA pass-thru devices  [Alan Stern]
+ab0b3b9  sch_red: update backlog as well  [WANG Cong]
+c300313  sparc/pci: Refactor dev_archdata initialization into pci_init_dev_archdata  [Sowmini Varadhan]
+d896b9f  scsi: Add STARGET_CREATED_REMOVE state to scsi_target_state  [Ewan D. Milne]
+9e9fe58  xfrm: Clear sk_dst_cache when applying per-socket policy.  [Jonathan Basseri]
+db769a0  arm64: Fix potential race with hardware DBM in ptep_set_access_flags()  [Catalin Marinas]
+2297977  CIFS: handle guest access errors to Windows shares  [Mark Syms]
+796c9c0  ASoC: wm8940: Enable cache usage to fix crashes on resume  [Geert Uytterhoeven]
+f629104  ASoC: ak4613: Enable cache usage to fix crashes on resume  [Geert Uytterhoeven]
+1c84d14  MIPS: Fix FCSR Cause bit handling for correct SIGFPE issue  [Maciej W. Rozycki]
+af521c7  usbvision: revert commit 588afcc1  [Vladis Dronov]
+5796c70  perf/core: Don't leak event in the syscall error path  [Alexander Shishkin]
+93e8e69  aacraid: Start adapter after updating number of MSIX vectors  [Raghava Aditya Renukunta]
+92fe37c  x86/PCI: Mark Broadwell-EP Home Agent 1 as having non-compliant BARs  [Prarit Bhargava]
+c447410  tpm: fix: return rc when devm_add_action() fails  [Jarkko Sakkinen]
+c8a5f83  thermal: allow u8500-thermal driver to be a module  [Arnd Bergmann]
+90f9ed9  thermal: allow spear-thermal driver to be a module  [Arnd Bergmann]
+c150409  btrfs: don't create or leak aliased root while cleaning up orphans  [Jeff Mahoney]
+137b1ce  sched/cgroup: Fix cgroup entity load tracking tear-down  [Peter Zijlstra]
+53025e7  um: Avoid longjmp/setjmp symbol clashes with libpthread.a  [Florian Fainelli]
+274337f  ipv6: orphan skbs in reassembly unit  [Eric Dumazet]
+61918db  net/mlx4_en: Resolve dividing by zero in 32-bit system  [Eugenia Emantayev]
+8017616  af_iucv: Move sockaddr length checks to before accessing sa_family in bind and connect handlers  [Mateusz Jurczyk]
+11eea05  radix-tree: fix radix_tree_iter_retry() for tagged iterators.  [Andrey Ryabinin]
+9903f3a  x86/mm/pat: Prevent hang during boot when mapping pages  [Matt Fleming]
+011859f  ARM: dts: apq8064: add ahci ports-implemented mask  [Srinivas Kandagatla]
+70b3d6c  tracing: Skip more functions when doing stack tracing of events  [Steven Rostedt (Red Hat)]
+6b3d161  ser_gigaset: use container_of() instead of detour  [Paul Bolle]
+ca4a744  net: drop write-only stack variable  [David Herrmann]
+997a494  ipv6: suppress sparse warnings in IP6_ECN_set_ce()  [Johannes Berg]
+9aae17f  KEYS: put keyring if install_session_keyring_to_cred() fails  [Eric Biggers]
+6596d0a  net: cxgb3_main: fix a missing-check bug  [Wenwen Wang]
+4f0336a  perf/ring_buffer: Prevent concurent ring buffer access  [Jiri Olsa]
+863fdd1  smsc95xx: Check for Wake-on-LAN modes  [Florian Fainelli]
+66e43f4  smsc75xx: Check for Wake-on-LAN modes  [Florian Fainelli]
+2bb181d  r8152: Check for supported Wake-on-LAN Modes  [Florian Fainelli]
+24665cb  sr9800: Check for supported Wake-on-LAN modes  [Florian Fainelli]
+04d846c  lan78xx: Check for supported Wake-on-LAN modes  [Florian Fainelli]
+f3d71a3  ax88179_178a: Check for supported Wake-on-LAN modes  [Florian Fainelli]
+644d191  asix: Check for supported Wake-on-LAN modes  [Florian Fainelli]
+df2d090  pxa168fb: prepare the clock  [Lubomir Rintel]
+b0c52fb  Bluetooth: SMP: fix crash in unpairing  [Matias Karhumaa]
+6879c04  mac80211_hwsim: do not omit multicast announce of first added radio  [Martin Willi]
+5217bec  xfrm: validate template mode  [Sean Tranchetti]
+f4c24fd  ARM: 8799/1: mm: fix pci_ioremap_io() offset check  [Thomas Petazzoni]
+db420bc  cfg80211: reg: Init wiphy_idx in regulatory_hint_core()  [Andrei Otcheretianski]
+7402bc9  mac80211: Always report TX status  [Andrei Otcheretianski]
+4e16c61  xfrm6: call kfree_skb when skb is toobig  [Thadeu Lima de Souza Cascardo]
+5ce93bd  xfrm: Validate address prefix lengths in the xfrm selector.  [Steffen Klassert]
+
+ * manifest
+a624017  Cumback  [edi194]
+
+ * vendor/paosp
+e5e8ead  Update branch  [edi194]
+f67285d  common: Allow custom vendor to override properties  [Christopher N. Hesse]
+
+====================
+     2018-11-09    
+====================
+
+ * hardware/broadcom/libbt
+f08b665  libbt: Make sure that we don't load pre-patch when looking for patch  [Alessandro Astone]
+
+ * hardware/qcom/fm
+518b8c1  fm: Fix wrong BT SOC property name  [Adithya R]
+
+ * vendor/paosp
+8a9fb0b  Make it that way  [edi194]
+0782dc3  Uh  [edi194]
+72cb6d6  PackageInstaller overlay  [edi194]
+
+====================
+     2018-11-08    
+====================
+
+ * device/xiaomi/whyred
+ad83aad  whyred: Remove TARGET_KERNEL_CLANG_VERSION  [Atman Shah]
+822c6ac  Revert "whyred: rootdir: Introduce 'SafailNet'"  [Atman Shah]
+3ec5973  whyred: aosp_whyred: Correct common path  [Atman Shah]
+6665a30  whyred: Go Enforcing!  [Atman Shah]
+8f47f5e  whyred: address some denials  [Akhil Narang]
+586e805  Revert "whyred: add system property to set AudioFlinger client heap size"  [Henrique Silva]
+ac91955  whyred: Nuke AndroidProducts.mk  [Atman Shah]
+638d059  whyred: aosp_whyred: Adapt for AEX  [Atman Shah]
+dc1f10e  whyred: Set DPI to 480  [Atman Shah]
+872fb6f  whyred: Build Health HIDL  [Atman Shah]
+
+ * frameworks/base
+aea8079  Fix playing screenshot's sound when camera's sounds off  [xyyx]
+
+ * hardware/qcom/fm
+2ac3ab2  FM: Remove unnecessary TARGET_BOARD_PLATFORM guard  [TheScarastic]
+
+ * hardware/qcom/power
+9e84f10  Reduce hwbinder buffer size for power HAL  [Vinay Verma]
+143f807  Cache SOC ID checks for future queries  [Zhao Wei Liew]
+
+ * manifest
+a0587ec  This shit is here  [edi194]
+15980d1  Revert "fucking huawei reeeeeee"  [edi194]
+968e6a3  fucking huawei reeeeeee  [Mateusz Korzeniewski]
+
+ * packages/apps/PornSettings
+b09dc56  Disable/Enable screenshot sound [2/2]  [edi194]
+
+ * packages/apps/SetupWizard
+71988d9  Revert "Testing stuff"  [edi194]
+
+ * vendor/paosp
+74a866d  Should fix some things  [edi194]
+0d94641  pornypie ffs  [Mateusz Korzeniewski]
+416311e  harpia go  [Mateusz Korzeniewski]
+01f390e  luncher  [Mateusz Korzeniewski]
+7a20c3e  Yes, I know it's messy as hell, but I'm still updating  [Mateusz Korzeniewski]
+8e826af  Update styles.xml  [edi194]
 
