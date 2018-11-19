@@ -2,10 +2,10 @@
 <PornOTA>
     <Pie>
         <whyred>
-            <Filename>PAOSP_creamPie-181114-Teen</Filename>
-			<BuildTime>1542208637</BuildTime>
-            <RomUrl>https://mirror.codebucket.de/paosp/whyred/PAOSP_creamPie-181114-Teen-whyred.zip</RomUrl>
-            <MD5Url>https://sia.pixeldrain.com/api/file/gFVF6sm5</MD5Url>
+            <Filename>PAOSP_creamPie-181119-Teen</Filename>
+			<BuildTime>1542635444</BuildTime>
+            <RomUrl>https://mirror.codebucket.de/paosp/whyred/PAOSP_creamPie-181119-Teen-whyred.zip</RomUrl>
+            <MD5Url>https://mirror.codebucket.de/paosp/whyred/PAOSP_creamPie-181119-Teen-whyred.zip.md5sum</MD5Url>
             <ChangelogUrl>https://raw.githubusercontent.com/pornypie/OTAconfig/teen/changelog/changelog-whyred.txt</ChangelogUrl>
         </whyred>
     </Pie>
