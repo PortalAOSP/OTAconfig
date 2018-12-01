@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XenonOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+<PornOTA>
     <Pie>
-        <whyred>
-            <Filename>PAOSP-Pie-181025-Amateur-mido</Filename>
-            <RomUrl
-                id="rom"
-                title=""
-                description="">nic</RomUrl>
-            <MD5Url
-                id="md5"
-                title=""
-                description="">nic</MD5Url>
-            <OpenGappsUrl
-                id="gapps"
-                title=""
-                description="">http://opengapps.org</OpenGappsUrl>
-            <ChangelogUrl
-                id="changelog"
-                title=""
-                description="">https://raw.githubusercontent.com/pornypie/OTAconfig/teen/changelog.txt</ChangelogUrl>
-            <DonateUrl
-                id="donate"
-                title=""
-                description="">nic</DonateUrl>
-        </whyred>
+        <mido>
+            <Filename>PAOSP_creamPie-181108-Teen</Filename>
+            <RomUrl>https://sia.pixeldrain.com/api/file/IbXQLW0T</RomUrl>
+            <MD5Url>https://sia.pixeldrain.com/api/file/v0JiUd1y</MD5Url>
+            <ChangelogUrl>https://raw.githubusercontent.com/pornypie/OTAconfig/teen/changelog/changelog-mido.txt</ChangelogUrl>
+        </mido>
     </Pie>
-</XenonOTA>
+</PornOTA>
