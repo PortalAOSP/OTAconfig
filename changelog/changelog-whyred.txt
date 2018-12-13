@@ -1,5 +1,5 @@
 ====================
-     2018-11-19    
+     2018-12-13    
 ====================
 
  * device/xiaomi/whyred
@@ -26,341 +26,193 @@ effa317  Forgot abt it uh  [edi184]
  * vendor/xiaomi
 1dbfb69  whyred: move goodix firmware to vendor  [Akhil Narang]
 
+ * device/qcom/sepolicy-legacy
+7476f39  NFC: Add nfc data file context and rename property  [Rohit Rangwani]
+
+ * hardware/qcom/display
+27adb24  msm8960/8974/8084: Include string.h where it is necessary  [Artem Borisov]
+be50591  msm8974: libexternal should depend on libmedia  [Christopher Wiley]
+51eedfb  msm8974: libgralloc: Fix adding offset to the mapped base address  [Steve Pfetsch]
+bd93363  msm8974: hwcomposer: Fix regression in hwc_sync  [Alex Naidis]
+50d9d00  msm8974: Move QCOM HALs to vendor partition  [Jiyong Park]
+adfacad  msm8960: copybit: Fix type conversion error for GCC 4.7  [Naseer Ahmen]
+6015326  display: add TARGET_PROVIDES_LIBLIGHT  [Giulio Cervera]
+156b61a  Revert "msm8974: deprecate msm8974"  [Chirayu Desai]
+
+ * hardware/qcom/media
+2ea95b3  media: vdec: Include nativebase headers  [Rashed Abdel-Tawab]
+71efa19  mm-video: venc: Correct a typo in variable name  [Deepak Verma]
+6817d26  Revert "msm8974: remove from top level makefile"  [Chirayu Desai]
+
+ * kernel/xiaomi/sdm660
+b86aee6  Merge branches 'caf-merge' and 'binder' into pie  [Akhil Narang]
+2a037d8  Merge tag 'v4.4.167' into pie  [Akhil Narang]
+b8baacd  whyred: enable CONFIG_IP_NF_TARGET_TTL  [Akhil Narang]
+640f858  Linux 4.4.167  [Greg Kroah-Hartman]
+d1deb58  mac80211: ignore NullFunc frames in the duplicate detection  [Emmanuel Grumbach]
+5a7b2af  mac80211: fix reordering of buffered broadcast packets  [Felix Fietkau]
+00512a2  mac80211: ignore tx status for PS stations in ieee80211_tx_status_ext  [Felix Fietkau]
+a315f71  mac80211: Clear beacon_int in ieee80211_do_stop  [Ben Greear]
+71a8069  mac80211_hwsim: Timer should be initialized before device registered  [Vasyl Vavrychuk]
+9ef13fe  kgdboc: fix KASAN global-out-of-bounds bug in param_set_kgdboc_var()  [Macpaul Lin]
+dc0e573  tty: serial: 8250_mtk: always resume the device in probe.  [Peter Shih]
+122775d  cifs: Fix separator when building path from dentry  [Paulo Alcantara]
+bcecc9e  Staging: lustre: remove two build warnings  [Greg Kroah-Hartman]
+7e54089  xhci: Prevent U1/U2 link pm states if exit latency is too long  [Mathias Nyman]
+5f3c652  SUNRPC: Fix leak of krb5p encode pages  [Chuck Lever]
+e32c747  virtio/s390: fix race in ccw_io_helper()  [Halil Pasic]
+e2ae7fd  virtio/s390: avoid race on vcdev->config  [Halil Pasic]
+92c01d8  ALSA: pcm: Fix interval evaluation with openmin/max  [Takashi Iwai]
+1b5c6d0  ALSA: pcm: Call snd_pcm_unlink() conditionally at closing  [Takashi Iwai]
+2ec5d37  ALSA: pcm: Fix starvation on down_write_nonblock()  [Chanho Min]
+0ced5ef  ALSA: hda: Add support for AMD Stoney Ridge  [Kai-Heng Feng]
+82fa3e9  ALSA: usb-audio: Fix UAF decrement if card has no live interfaces in card.c  [Hui Peng]
+c380600  USB: check usb_get_extra_descriptor for proper size  [Mathias Payer]
+c19c188  usb: appledisplay: Add 27" Apple Cinema Display  [Alexander Theissen]
+0a59a29  usb: quirk: add no-LPM quirk on SanDisk Ultra Flair device  [Harry Pan]
+56db12c  net: amd: add missing of_node_put()  [Yangtao Li]
+91da119  iommu/vt-d: Use memunmap to free memremap  [Pan Bian]
+5b1c8d0  net: faraday: ftmac100: remove netif_running(netdev) check before disabling interrupts  [Vincent Chen]
+dd3fa93  net/mlx4: Fix UBSAN warning of signed integer overflow  [Aya Levin]
+ebf371a  net/mlx4_core: Fix uninitialized variable compilation warning  [Tariq Toukan]
+3adf0b7  net/mlx4_core: Zero out lkey field in SW2HW_MPT fw command  [Jack Morgenstein]
+93940a2  qed: Fix reading wrong value in loop condition  [Denis Bolotin]
+30d5a7c  qed: Fix PTT leak in qed_drain()  [Denis Bolotin]
+61d221f  bnx2x: Assign unique DMAE channel number for FW DMAE transactions.  [Sudarsana Reddy Kalluru]
+497b7ca  batman-adv: Expand merged fragment buffer for full packet  [Sven Eckelmann]
+0cd96c4  can: rcar_can: Fix erroneous registration  [Fabrizio Castro]
+0ebb926  iommu/ipmmu-vmsa: Fix crash on early domain free  [Geert Uytterhoeven]
+96915a2  iommu/vt-d: Fix NULL pointer dereference in prq_event_thread()  [Lu Baolu]
+43daa3c  usb: gadget: dummy: fix nonsensical comparisons  [Arnd Bergmann]
+af70fc3  mm: mlock: avoid increase mm->locked_vm on mlock() when already mlock2(,MLOCK_ONFAULT)  [Simon Guo]
+78b572c  mm: cleancache: fix corruption on missed inode invalidation  [Pavel Tikhomirov]
+4d0afb8  arc: [devboards] Add support of NFSv3 ACL  [Alexey Brodkin]
+d473a00b  ARC: change defconfig defaults to ARCv2  [Kevin Hilman]
+f43cae2  Btrfs: fix use-after-free when dumping free space  [Filipe Manana]
+8732a2f  btrfs: Always try all copies when reading extent buffers  [Nikolay Borisov]
+da74d33  Input: elan_i2c - add support for ELAN0621 touchpad  [Adam Wong]
+47c89da  Input: elan_i2c - add ACPI ID for Lenovo IdeaPad 330-15ARR  [Noah Westervelt]
+38c63d5  Input: elan_i2c - add ELAN0620 to the ACPI table  [Patrick Gaskin]
+deae221  Input: matrix_keypad - check for errors from of_get_named_gpio()  [Christian Hoff]
+f841466  Input: xpad - quirk all PDP Xbox One gamepads  [Cameron Gutman]
+0c4da5d  leds: leds-gpio: Fix return value check in create_gpio_led()  [Wei Yongjun]
+5e946ed  leds: turn off the LED and wait for completion on unregistering LED class device  [Milo Kim]
+c5cc3e0  leds: call led_pwm_set() in leds-pwm to enforce default LED_OFF  [Markus Hofstaetter]
+5403677  kgdboc: Fix warning with module build  [Laura Abbott]
+fa8d814  kgdboc: Fix restrict error  [Laura Abbott]
+81ff3e2  scsi: csiostor: Avoid content leaks and casts  [Kees Cook]
+0d980b7  ALSA: trident: Suppress gcc string warning  [Takashi Iwai]
+225849e  scsi: scsi_devinfo: cleanly zero-pad devinfo strings  [Martin Wilck]
+3e68cba  drm/ast: Fix incorrect free on ioregs  [Sam Bobroff]
+fb68afd  mips: fix mips_get_syscall_arg o32 check  [Dmitry V. Levin]
+c18ce9d  MIPS: ralink: Fix mt7620 nd_sd pinmux  [Mathias Kresin]
+c927120  uprobes: Fix handle_swbp() vs. unregister() + register() race once more  [Andrea Parri]
+def7099  iser: set sector for ambiguous mr status errors  [Sagi Grimberg]
+e188516  kdb: use memmove instead of overlapping memcpy  [Arnd Bergmann]
+e6b59ae  staging: rts5208: fix gcc-8 logic error warning  [Arnd Bergmann]
+a7118a1  scsi: bfa: convert to strlcpy/strlcat  [Arnd Bergmann]
+afa648b  drm: gma500: fix logic error  [Arnd Bergmann]
+44cf1d4  ip_tunnel: Fix name string concatenate in __ip_tunnel_create()  [Sultan Alsawaf]
+d97f4a5  kernfs: Replace strncpy with memcpy  [Guenter Roeck]
+37370fa  unifdef: use memcpy instead of strncpy  [Linus Torvalds]
+204a765  kobject: Replace strncpy with memcpy  [Guenter Roeck]
+62ff594  disable stringop truncation warnings for now  [Stephen Rothwell]
+2ac36cc  exec: avoid gcc-8 warning for get_task_comm  [Arnd Bergmann]
+5b8cc58  Kbuild: suppress packed-not-aligned warning for default setting only  [Xiongfeng Wang]
+1cbec2e  misc: mic/scif: fix copy-paste error in scif_create_remote_lookup  [YueHaibing]
+1ddbdbd  usb: core: quirks: add RESET_RESUME quirk for Cherry G230 Stream series  [Michael NiewÃ¶hner]
+9398e42  USB: usb-storage: Add new IDs to ums-realtek  [Kai-Heng Feng]
+fed44f0  btrfs: release metadata before running delayed refs  [Josef Bacik]
+d27f779  dmaengine: at_hdmac: fix module unloading  [Richard Genoud]
+ec3eeb3  dmaengine: at_hdmac: fix memory leak in at_dma_xlate()  [Richard Genoud]
+89ed5b7  ext2: fix potential use after free  [Pan Bian]
+4d5f99e  ALSA: sparc: Fix invalid snd_free_pages() at error path  [Takashi Iwai]
+73f607a  ALSA: control: Fix race between adding and removing a user element  [Takashi Iwai]
+a71ca61  ALSA: ac97: Fix incorrect bit shift at AC97-SPSA control write  [Takashi Iwai]
+b307c96  ALSA: wss: Fix invalid snd_free_pages() at error path  [Takashi Iwai]
+e3fc215  Btrfs: ensure path name is null terminated at btrfs_control_ioctl  [Filipe Manana]
+327242a  xtensa: fix coprocessor context offset definitions  [Max Filippov]
+c8e1304  xtensa: enable coprocessors that are being flushed  [Max Filippov]
+c931360  kvm: mmu: Fix race in emulated page table writes  [Junaid Shahid]
+f61ebb6  usbnet: ipheth: fix potential recvmsg bug and recvmsg bug 2  [Bernd Eckstein]
+6ae0dc6  s390/qeth: fix length check in SNMP processing  [Julian Wiedmann]
+9ab8f8c  rapidio/rionet: do not free skb before reading its length  [Pan Bian]
+494fedd  Revert "wlcore: Add missing PM call for wlcore_cmd_wait_for_event_or_timeout()"  [Sasha Levin]
+4de120c  media: em28xx: Fix use-after-free when disconnecting  [Matthias Schwarzott]
+
+ * packages/apps/Messaging
+b290d64  Allow intent shared subject or title to be mms subject  [Marco Sirabella]
+
 ====================
-     2018-11-18    
+     2018-12-12    
 ====================
 
  * device/xiaomi/whyred
-bcc360b  whyred: Remove power-off alarm stuff from init extension  [dianlujitao]
+f34e7f8  Revert "whyred: enable PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE"  [Akhil Narang]
+18068d2  Merge remote-tracking branch 'GuaiYiHu/lineage-16.0' into HEAD  [Akhil Narang]
+5cecc5a  whyred: proprietary: Add missing qdcm configuration for huaxing panel  [GuaiYiHu]
 
- * vendor/xiaomi
-101a9b2  Restore qti-telephony-common from oreo  [Henrique Silva]
+ * hardware/qcom/power
+fbb8521  power: msm8960: Implement performance profiles  [Zhao Wei Liew]
+
+ * vendor/xiaomi/whyred
+2c93de4  whyred: Add missing qdcm configuration for huaxing panel  [GuaiYiHu]
 
 ====================
-     2018-11-17    
+     2018-12-11    
+====================
+
+ * device/xiaomi/whyred
+a1e0088  whyred: Update drm/gatekeeper/keystore blobs from Mi A2  [GuaiYiHu]
+dc47d27  whyred: Enable h/w memory tuning  [Ramjee Singh]
+3350fc2  whyred: add system property to set AudioFlinger client heap size  [Satya Krishna Pindiproli]
+1a82f17  whyred: bluetooth: Build bthost_ipc with latest caf  [GuaiYiHu]
+60221e0  whyred: Update props for new sdm blobs  [GuaiYiHu]
+489e92e  whyred: proprietary: Remove duplicated graphics firmware  [GuaiYiHu]
+93a50d6  whyred: proprietary: Update Radio blobs from Mi A2  [GuaiYiHu]
+
+ * vendor/xiaomi/whyred
+d2cff7c  whyred: Update drm/gatekeeper/keystore blobs from Mi A2  [GuaiYiHu]
+
+====================
+     2018-12-10    
+====================
+
+ * vendor/xiaomi/whyred
+5ca8f16  whyred: Update Radio blobs from Mi A2  [GuaiYiHu]
+
+====================
+     2018-12-09    
 ====================
 
  * device/qcom/sepolicy
-0be5ee0  Merge tag 'LA.UM.7.3.r1-06300-sdm845.0' into HEAD  [Bruno Martins]
-
- * device/qcom/sepolicy-legacy
-9b34c68  sepolicy: Remove apq8098_latv and qsc605 platform rules  [Bruno Martins]
-
- * device/xiaomi/whyred
-b50a8fa  whyred: overlay: Pin the same RenderScript libs as stock  [Bruno Martins]
-cd63d59  whyred: Pin HOME application  [Jorim Jaggi]
-abd27b8  whyred: Kang brightness overlays from marlin  [TheScarastic]
-0830f9b  whyred: go enforcing!  [Akhil Narang]
-0eba0c1  whyred: address some denials  [Akhil Narang]
-e766daa  whyred: overlay: Ignore RSSNR signal level  [Henrique Silva]
-973d181  whyred: Disable vendor default color mode  [Henrique Silva]
-fc5345d  whyred: overlay: Apply padding for rounded corner  [Jesse Chan]
-2b67a72  whyred: Restore old fingerprint  [Henrique Silva]
-b0ad85e  init: Set correct model for Global variant too  [Henrique Silva]
-5e93e96  whyred: Set matching build fingerprint for system, vendor and boot images  [Bruno Martins]
-ba2b66b  whyred: Track and include MiuiCamera  [Henrique Silva]
-9b577a0  whyred: media_profiles: Remove highspeed profiles  [Henrique Silva]
-685d10f  whyred: overlay: Pin camera app  [Henrique Silva]
-afca245  whyred: Disable wifi display  [jhenrique09]
-1b6576a  whyred: doze: Adapt-it  [Henrique Silva]
-526534c  whyred: build kernel with clang7  [Akhil Narang]
-479213d  whyred: Update defconfig name  [Henrique Silva]
-8a2d1a8  Initial cleanup and PE bringup  [Henrique Silva]
-1884d16  whyred: Update to MIUI 8.11.15  [GuaiYiHu]
-07ee151  whyred: proprietary: Update blobs from Mi A2  [GuaiYiHu]
-
- * system/extras
-de1599f  extras: remove su  [Dan Pasanen]
-
- * vendor/MiuiCamera
-60b3c6c  Disable forced shutter sound  [Henrique Silva]
-14fa645  Update blobs  [Henrique Silva]
-
- * vendor/xiaomi
-5f8d8a0  whyred: Update vendor blobs from MIUI 8.11.15  [GuaiYiHu]
-d9e093d  whyred: Update blobs from Mi A2  [GuaiYiHu]
-df4f788  whyred: Update ANT+ system blobs to P  [GuaiYiHu]
-c323823  sdm845-common: Remove qti-telephony-common  [Henrique Silva]
-ecc8269  sdm845 targets: Move to common P blobs  [Bruno Martins]
-e869a8c  beryllium: Add aptX libs  [TheScarastic]
-cc0a012  whyred: Remove wcnss_filter  [GuaiYiHu]
-4567b5d  whyred: Update vendor blobs from MIUI 8.10.25  [GuaiYiHu]
-f525b0b  Import whyred vendor from https://github.com/PixelExperience-Devices/vendor_xiaomi_whyred  [Henrique Silva]
-
-====================
-     2018-11-16    
-====================
+4fdc59a  common: Fix labelling of lcd-backlight  [Michael Bestas]
+629c8cc  sepolicy: Allow mm-qcamerad to access v4L "name" node  [Bruno Martins]
+bd5f705  sepolicy: Fix video4linux "name" node labeling  [Bruno Martins]
 
  * device/xiaomi/whyred
-6e69ee5  whyred: Remove NFC data directory creation  [Rohit Rangwani]
+f0e802c  whyred: Set the flag to disable rild  [Naina Nalluri]
+6b2b3d5  whyred: Set TARGET_2ND_CPU_VARIANT as cortex-a73  [GuaiYiHu]
+d1ac36e  whyred: Whitelist org.codeaurora.ims package  [Garik Badalyan]
+6acd0bb  whyred: enable PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE  [Vara Prasad A V S G]
 
  * packages/apps/LineageParts
-cdbd5fe  PartsActivity: Prevent actionbar NPE  [Michael Bestas]
-
- * packages/apps/TvSettings
-d2699fa  Show Trust in security settings  [Aaron Kling]
+36c5aae  LineageParts: Re-enable expanded desktop.  [Danny Baumann]
 
 ====================
-     2018-11-15    
+     2018-12-08    
 ====================
 
- * device/xiaomi/whyred
-045a802  whyred: Address dac_override and dac_read_search issues in init.qcom.sh  [Sridhar Parasuram]
-4a9f62a  whyred: Create new directory for Bluetooth SoC dump  [RAJATH R]
-fd3332e  whyred: Swap disk creation  [Karthik Gopalan]
-9b253c8  whyred: Change /data/misc/fm to /data/vendor/fm  [himta ram]
-4b4f0ad  whyred: init: move vpp path to /mnt/vendor/persist/  [Li Sun]
-538a320  whyred: init.qcom.rc: create /mnt/persist/secnvm for sec_nvm service  [Konstantin Dorfman]
-b96863e  whyred: Add custom hals to device framework compatibility matrix  [dianlujitao]
-aa83528  whyred: Rename bt props for new HAL  [dianlujitao]
-9d8ca7e  whyred: Change /data/time to /data/vendor/time  [Mao Jinlong]
-537cfb0  Revert "whyred: time_daemon: use /persist to store offset to RTC"  [GuaiYiHu]
-9feeb7f  whyred: Moving location sockets from /data to /dev  [Saurabh Srivastava]
-67ff22a  whyred: Enable 64 bit DRM plugins compilation  [Udaya Bhaskara Reddy Mallavarapu]
-5c8e826  whyred: Update display config compatibility matrix  [Rajavenu Kyatham]
-3abb36b  whyred: IQtiRadio HIDL version update to 2.0  [Ruthwar Ambeer]
-f2c8d87  whyred: Uprev IMS HIDL to 1.4  [Sumit Das]
-54d8dea  whyred: Update display color 1.2 in framework compatibility matrix  [Xu Yang]
-b8caaa0  whyred: Add 1.0::IGnss/gnss_vendor to compatibility matirx  [Baili Feng]
-db9ca30  whyred: Update display config compatibility matrix  [Pullakavi Srinivas]
-c6ba5f1  whyred: Update framework compatibility matrix to be compatible with IMS HALs  [Sumit Das]
-8af5829  whyred: Remove improveTouch HAL Entry from vendor framework manifest  [Shantanu Jain]
-7e1f69e  whyred: Add vendor.qti.data.factory to framework compatibility matrix.  [Eric Chang]
-faf6576  whyred: Add vendor HAL entries in framework compatibility matrix  [Vinay Verma]
-4bfb662  whyred: Add factory hidl matrix  [Daocai Yang]
-d6ccca5  whyred: Update compatibility matrix with Display HAL's  [Anjaneya Prasad Musunuri]
-d09013d  whyred: Add MATRIX file for vendor HAL's  [Vinay Verma]
-b4577f5  whyred: Move AtFwd hal from device to framework manifest.  [Ruthwar Ambeer]
-4fcbc5f  whyred: ueventd.qcom.rc: set permissions of /dev/qce device  [Zhen Kong]
-70242ad  whyred: Create display folder under /mnt/vendor/persist  [Qing Huang]
-48c3b12  whyred: Creating directory mnt/vendor/persist/bluetooth  [RAJATH R]
-429977f  whyred: Change time persist folder path  [Mao Jinlong]
-a3d0fa6  whyred: Remove creating and accessing /data/media from vendor domain  [Mahesh Lanka]
-05a6ede  whyred: Set partitions for loop device.  [Bindu Gokul]
-ee256d2  whyred: rootdir: Added a permissions for ODL char devices  [Mohammed Javid]
-586e87c  whyred: New HAL for passing RCS configuration to modem  [Brandon solis]
-055cec0  whyred: Starting imsrtpd on bootup  [Sauvik Saha]
-ba1d789  whyred: Starting imsrcsd on bootup  [Devi Sandeep Endluri V V]
-315ae8b  whyred: New HAL for passing SIP call info headers to clients  [Brandon]
-4df0412  whyred: Update prefix of hwcomposer service  [Ramakant Singh]
-7b33c20  whyred: init: Create persist directory for hvdcp_opti  [Subbaraman Narayanamurthy]
-f412fa5  whyred: Bluetooth: Increase number of SEPs to support SHO/Mcast  [Umesh Vats]
-cdf810a  whyred: Use build system to create mount point symlinks  [Bruno Martins]
-aad2cea  whyred: Bind mount /mnt/vendor/persist to /persist for sensors  [dianlujitao]
-c43fd34  whyred: Update symlinks for new mount points  [dianlujitao]
-b10232e  whyred: Create mount point symlinks for backward compatibility  [dianlujitao]
-4b940aa  whyred: config.fs: Specify firmware image files as system:system  [David Ng]
-390b1c3  whyred: Update references of firmware to /vendor/firmware_mnt  [Vinay Verma]
-05fd18e  whyred: Mount dsp and firmware in vendor  [Vinay Verma]
-7ae4db6  whyred: Change qti service name to dataqti  [Mohammed Javid]
-918099b  whyred: Move /bt_firmware mount point to /vendor/bt_firmware  [Vinay Verma]
-b2db5fc  whyred: Add vendor prefix to data connectivity  [Devi Sandeep Endluri V V]
-e54ed8d  whyred: Start loc_launcher as gps user  [Harikrishnan Hariharan]
-884b22d  whyred: Set permissions of /dev/byte-cntr device  [Saranya Chidura]
-7c07f9b  whyred: Changing iop directory permission  [Abhimanyu Garg]
-68be981  whyred: Moving persist mount point to /mnt/vendor/persist  [Vinay Verma]
-7ccb44a  whyred: Renamed config_dozeAfterScreenOff  [Lucas Dupin]
-a18042c  whyred: Enable boot and system server dex-preopt  [Artem Borisov]
-bace579  overlay: Use vibration pattern from pixel 2  [Vasishath Kaushal]
-bb59d31  whyred: Doze: Add missing preference listeners  [Bruno Martins]
+ * packages/apps/Messaging
+d1b7348  Messaging: Add "Mark as read" quick action for message notifications  [Paul Keith]
 
- * frameworks/base
-6eb88e1  Update platform.xml  [edi194]
-
- * hardware/qcom/audio-caf/msm8952
-f2dd859  mm-audio: Remove extraneous parantheses  [Rashed Abdel-Tawab]
-58a24f3  post_proc: Handle unused asphere function parameters  [Ethan Chen]
-efb7ea8  post_proc: Remove unused label  [Rashed Abdel-Tawab]
-34ad676  visualizer: Fix typedef redefinition  [Rashed Abdel-Tawab]
-bbb5826  Visualizer: do not use GNU old-style field designators  [synergy dev]
-45351db  voice_processing: do not use GNU old-style field designators  [synergydev]
-
- * packages/apps/DeskClock
-5c47e72  DeskClock: Add support of power off alarm feature  [Mao Jinlong]
-
- * packages/apps/PornOTA
-28e05d3  Update ic_nav_android.xml  [edi194]
+ * prebuilts/clang/host/linux-x86
+a6dbb23  Update prebuilt Clang to r346389b.  [Chih-Hung Hsieh]
 
 ====================
-     2018-11-14    
+     2018-12-07    
 ====================
-
- * bionic
-e289aff  Merge pull request #1 from TeamHorizon/p  [edi194]
-721bff4  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-6c10745  remove bionic-compile-time-tests-g++  [Sajid Dalvi]
-
- * build/make
-6c16ba7  Merge pull request #3 from TeamHorizon/p  [edi194]
-48a98c7  build: Also replace techpack/audio old-style kernel header  [Bruno Martins]
-64f8f32  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * build/soong
-f1fd173  Merge pull request #1 from TeamHorizon/p  [edi194]
-691c520  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * development
-701d554  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * device/xiaomi/whyred
-e63fc33  whyred: Update ANT+ system blobs to P  [LuK1337]
-
- * external/f2fs-tools
-9195db0  Merge tag 'android-9.0.0_r16' into lineage-16.0-android-9.0.0_r16  [Luca Stefani]
-
- * frameworks/av
-b0d4d1d  Merge pull request #1 from TeamHorizon/p  [edi194]
-2306c7c  Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_frameworks_av into HEAD  [dadi11]
-b376590  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-bb984c4  CameraService: Support calling addStates in enumerateProviders  [Artem Borisov]
-
- * frameworks/base
-73fd421  Update NavigationBarView.java  [edi194]
-a096f4b  Update KeyguardBottomAreaView.java  [edi194]
-1f413bc  Update FingerprintUnlockController.java  [edi194]
-16096d1  Update dimens.xml  [edi194]
-5be4058  Update metrics_constants.proto  [edi194]
-aeb3c27  Pornify  [edi194]
-4c15b64  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-712e6d2  ConsumerIR: Support Huawei's DSP chip implementation  [Artem Borisov]
-
- * frameworks/native
-54bb557  Merge pull request #1 from TeamHorizon/p  [edi194]
-62ee02e  Revert screenshot changes to exclude black cutout  [Luca Stefani]
-ad1bc43  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-31bf01c  sf: Add prop based default config for client composition  [Chris]
-e35b14e  sf: Fix damage for Huawei compositor  [Pierre-Hugues Husson]
-90f4a2a  sf: Don't enforce presentOrValidate in HWComposer  [Pierre-Hugues Husson]
-ec267a7  libui: Ignore invalid usage bits in buffer descriptor  [Artem Borisov]
-
- * frameworks/opt/net/wifi
-abd1297  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * frameworks/opt/telephony
-25e95f2  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-2b35e11  Telephony: Do not call onUssdRelease for Huawei RIL  [Artem Borisov]
-73f36a9  telephony: Query LTE thresholds from CarrierConfig  [Artem Borisov]
-e2815d9  telephony: Squashed support of dynamic signal strength thresholds  [Paul Keith]
-7d841a6  Implement signal strength hacks used on Huawei devices  [codeworkx]
-
- * hardware/broadcom/wlan
-7f14d25  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * hardware/nxp/nfc
-25740c0  Prepend vendor. to NFC HAL service name  [Rashed Abdel-Tawab]
-
- * hardware/qcom/audio/default
-dd208e3  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * hardware/qcom/bootctrl
-8afedbb  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * hardware/qcom/display
-f1a7852  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * hardware/qcom/gps
-90acec9  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * hardware/qcom/media
-5a65b2f  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * lineage-sdk
-6d0a78e  Rebrand  [edi194]
-
- * manifest
-0903e90  9.0.0_r16 & some more repos  [edi194]
-
- * packages/apps/Camera2
-e9fce7b  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/apps/CarrierConfig
-a8c2da7  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/apps/Contacts
-a0a1a12  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/apps/DeskClock
-35d4268  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/apps/DocumentsUI
-5ca116b  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/apps/Nfc
-0b8f144  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/apps/PackageInstaller
-cf8bb04  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/apps/Settings
-d441d29  Uh  [edi194]
-0206250  Pornify  [edi194]
-4898a44  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-ef7a22f  Settings: Changelog Fragment - Set Title  [Devil7DK]
-
- * packages/apps/Stk
-a921396  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/apps/StorageManager
-12c3438  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/apps/TvSettings
-e133aed  Add button to shut down device  [Aaron Kling]
-71232e6  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/providers/ContactsProvider
-36aec72  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/providers/DownloadProvider
-c869fa0  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/providers/MediaProvider
-718d380  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/providers/TelephonyProvider
-5ba54eb  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/services/Telecomm
-269cfb2  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * packages/services/Telephony
-b564fce  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-5605c28  Telephony: Support muting by RIL command  [Artem Borisov]
 
  * system/bt
-2b0037d  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * system/core
-4addfc6  Merge pull request #1 from TeamHorizon/p  [edi194]
-2cc5a4e  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * system/extras
-dcc22d6  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * system/netd
-20499b5  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * system/security
-6e46041  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * system/sepolicy
-dbcf542  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-3a0866a  Allow hal_usb access sysfs when in coredomain  [Artem Borisov]
-
- * system/vold
-8930bc0  Merge tag 'android-9.0.0_r16' into lineage-16.0  [Luca Stefani]
-
- * vendor/paosp
-9ba5c69  Update privapp-permissions-lineage.xml  [edi194]
-0ca62fa  Nie umiem w cherrypick v2  [edi194]
-cc9fd6c  Upstream  [edi194]
-
-====================
-     2018-11-13    
-====================
-
- * hardware/broadcom/libbt
-967304f  libbt: Fix logic check when FW_PRE_PATCH is not used.  [Eric Meddaugh]
-
- * vendor/paosp
-99dc713  apns: Add APN for a2mobile  [David Sn]
+46b7f19  Merge tag 'android-9.0.0_r21' into HEAD  [Luca Stefani]
 
